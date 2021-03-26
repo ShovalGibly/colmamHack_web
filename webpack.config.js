@@ -12,7 +12,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({ template: "./public/index.html"}),
-    new ProvidePlugin({ React: 'react', Style: 'styled-components' })
+    new ProvidePlugin({ React: 'react'})
   ],
 
   resolve: {
