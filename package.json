@@ -1,0 +1,35 @@
+{
+  "name": "coman-hack",
+  "version": "1.0.0",
+  "description": "colman:hack website",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --hot --open --mode development",
+    "build": "webpack --config webpack.config.js --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colman-hack/coman-hack.git"
+  },
+  "author": "Amnon Ashkenazy & Saar Davidson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colman-hack/coman-hack/issues"
+  },
+  "homepage": "https://github.com/colman-hack/coman-hack#readme",
+  "dependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.2.1",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "devDependencies": {}
+}
