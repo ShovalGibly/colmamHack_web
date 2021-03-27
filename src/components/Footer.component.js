@@ -1,11 +1,9 @@
-
-import { FlexWrapper} from "../utils/constants/styledComponentsGlobal.constant";
+import { FlexWrapper } from '../utils/constants/styledComponentsGlobal.constant';
 
 function Footer() {
-    return (
-        <FlexWrapper height='40vh' backgroundColor='lightPurpel'>
-        </FlexWrapper>
-    );
+  return (
+    <FlexWrapper height='40vh' backgroundColor='lightPurple'></FlexWrapper>
+  );
 }
 
 export default Footer;

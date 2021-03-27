@@ -1,11 +1,9 @@
-
-import { FlexWrapper} from "../utils/constants/styledComponentsGlobal.constant";
+import { FlexWrapper } from '../utils/constants/styledComponentsGlobal.constant';
 
 function CreditsSection() {
-    return (
-        <FlexWrapper height='100vh' backgroundColor='darkPurpel'>
-        </FlexWrapper>
-    );
+  return (
+    <FlexWrapper height='100vh' backgroundColor='darkPurple'></FlexWrapper>
+  );
 }
 
 export default CreditsSection;
