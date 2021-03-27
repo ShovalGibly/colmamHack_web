@@ -118,3 +118,79 @@ export const Link = styled.a`
         font-size: 1rem;
     }
 `;
+
+export const PopupWrapper = styled(FlexWrapper)`
+    display: ${({isOpen}) => isOpen ? 'flex' : 'none'};
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: ${Colors.darkPurpel + Colors.opacity90};
+`;
+
+export const Popup = styled(FlexWrapper)`
+    width: auto;
+    height: auto;
+    background-color: ${({backgroundColor}) => Colors[backgroundColor] ?? backgroundColor ?? 'transparent'};
+`;
+
+export const Form = styled.form`
+    display: flex;
+    flex-direction: column;
+`;
+
+export const TextInput = styled.input`
+    padding: 1rem;
+    color: ${Colors.darkPurpel};
+    font-size: 1.6rem;
+    font-family: inherit;
+    border-radius: 10px;
+    background-color: ${Colors.white};
+    width: 50rem;
+    border: none;
+    margin: 1rem;
+`;
+
+export const SelectBox = styled.select`
+    padding: 1rem;
+    color: ${Colors.darkPurpel};
+    font-size: 1.6rem;
+    font-family: inherit;
+    border-radius: 10px;
+    background-color: ${Colors.white};
+    width: 24rem;
+    border: none;
+    margin: 1rem;
+`;
+
+export const TextArea = styled.textarea`
+    padding: 1rem;
+    color: ${Colors.darkPurpel};
+    font-size: 1.6rem;
+    font-family: inherit;
+    border-radius: 10px;
+    background-color: ${Colors.white};
+    width: 50rem;
+    border: none;
+    margin: 1rem;
+    resize: none;
+`;
+
+export const Button = styled.button`
+    margin: 1rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-family: inherit;
+    width: 20rem;
+    height: 4rem;
+    border-radius: 5px;
+    background-color: ${Colors.turquoise};
+    color: ${Colors.darkPurpel};
+    border: none;
+    outline:none;
+    align-self: center;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+`;

@@ -32,10 +32,10 @@ function CountDownTimer({date='apr 26, 2021 12:00:00'}){
                 const numberToPrint = String(countDownState[key]).padStart(2, '0');
                 const afterNumber = key !== 'secounds' ? ':' : ' ';
                 return (
-                    <NumberWrapper>
+                    <NumberWrapper key={uniqid()}>
                         {isNaN(countDownState[key]) || !showCountDown ?
                             <Loader /> :
-                            <BigHeadLine key={uniqid()} color='turquoise'>{`${numberToPrint} ${afterNumber}`}</BigHeadLine>
+                            <BigHeadLine color='turquoise'>{`${numberToPrint} ${afterNumber}`}</BigHeadLine>
                         }
                         <SmallHeadLine margin='0 0 0 2rem'>{key}</SmallHeadLine>
                     </NumberWrapper>
