@@ -170,6 +170,17 @@ export const Form = styled.form`
   align-items: center;
 `;
 
+export const Error = styled.p`
+  color: ${Colors.turquoise};
+  margin: 0 1rem;
+  align-self: flex-end;
+
+  &::before {
+    display: inline;
+    content: "⚠ ";
+  }
+`;
+
 export const TextInput = styled.input`
   padding: 1rem;
   color: ${Colors.darkPurple};

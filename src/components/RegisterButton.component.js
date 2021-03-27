@@ -1,14 +1,22 @@
 
 import { useState } from "react";
 import styled from "styled-components";
-import { FlexWrapper, SmallHeadLine, PopupWrapper, Popup, Form, TextInput, SelectBox, TextArea, Button, Space, ClosingButton } from "../utils/constants/styledComponentsGlobal.constant";
+import { FlexWrapper, PopupWrapper, Popup, Form, TextInput, SelectBox, TextArea, Button, Space, ClosingButton, Error } from "../utils/constants/styledComponentsGlobal.constant";
 import closeButton from '../assets/close-button.png';
+import { useForm } from "react-hook-form";
+
+// react hook form docs => https://react-hook-form.com/get-started
 
 function RegisterButton() {
     const [isOpen, setIsOpen] = useState(true);
+    const { register, handleSubmit, errors } = useForm();
     
     const handleOpen = () => setIsOpen(true);
     const handleClose = () => setIsOpen(false);
+    const onSubmit = data => {
+
+    };
+
 
     return (
         <>
@@ -20,27 +28,32 @@ function RegisterButton() {
                     <img src={closeButton} />
                 </ClosingButton>
                 <Popup>
-                    <Form>
-                        <TextInput type='text' dir='rtl' placeholder='שם מלא'/>
-                        <TextInput type='email' dir='rtl' placeholder='מייל'/>
-                        <TextInput type='tel' dir='rtl' placeholder='טלפון'/>
-                        <TextInput type='password' dir='rtl' placeholder='סיסמא'/>
-                        <TextInput type='password' dir='rtl' placeholder='אימות סיסמא'/>
+                    <Form onSubmit={handleSubmit(onSubmit)}>
+                        <TextInput ref={register({required: true, minLength:2, maxLength: 25 })} name='fullName' type='text' dir='rtl' placeholder='שם מלא'/>
+                        {errors.fullName && <Error dir='rtl'> שדה חובה בין 2 ל 25 תווים </Error>}
+                        <TextInput ref={register({required: true, pattern:emailRegex})} name='email' type='email' dir='rtl' placeholder='מייל'/>
+                        {errors.email && <Error dir='rtl'> אנא הכנס אימייל תקין </Error>}
+                        <TextInput ref={register({required: true, minLength:8, maxLength: 12})} name='mobileNumber' type='tel' dir='rtl' placeholder=' טלפון נייד '/>
+                        {errors.mobileNumber && <Error dir='rtl'> אנא הכנס מספר טלפון תקין </Error>}
+                        <TextInput ref={register({required: true, minLength:2, maxLength: 25})} name='groupName' type='text' dir='rtl' placeholder=' שם קבוצה (או אין קבוצה אם אין) '/>
+                        {errors.groupName && <Error dir='rtl'> אנא הכנס שם קבוצה או כתוב אין קבוצה אם אין </Error>}
                         <SelectWrapper justifyContent='space-between' flexDirection='row-reverse'>
-                            <SelectBox dir='rtl'>
-                                <option> שנת לימוד </option>
-                                <option> שנה א </option>
-                                <option> שנה ב </option>
-                                <option> שנה ג </option>
+                            <SelectBox ref={register({validate: value => value !== ''})} name='studyYear' dir='rtl'>
+                                <option value =''> שנת לימוד </option>
+                                <option value ='year1'> שנה א </option>
+                                <option value ='year2'> שנה ב </option>
+                                <option value ='year3'> שנה ג </option>
                             </SelectBox>
-                            <SelectBox dir='rtl'>
-                                <option> סוג התואר </option>
-                                <option> מדעי המחשב </option>
-                                <option> עיצוב </option>
-                                <option> אחר </option>
+                            <SelectBox ref={register({validate: value => value !== ''})} name='studyField' dir='rtl'>
+                                <option value =''> סוג התואר </option>
+                                <option value ='computerScience'> מדעי המחשב </option>
+                                <option value ='design'> עיצוב </option>
+                                <option value ='other'> אחר </option>
                             </SelectBox>
                         </SelectWrapper>
-                        <TextArea rows='6' dir='rtl' placeholder='קצת על עצמך (אם בא לך)'/>
+                        {errors.studyYear && <Error dir='rtl'> אנא בחר שנת לימוד </Error>}
+                        {errors.studyField && <Error dir='rtl'> אנא בחר סוג תואר </Error>}
+                        <TextArea ref={register} name='aboutSelf' rows='6' dir='rtl' placeholder='קצת על עצמך (אם בא לך)'/>
                         <Button> שלח </Button>
                     </Form>
                 </Popup>
@@ -76,5 +89,7 @@ const SelectWrapper = styled(FlexWrapper)`
         justify-content: center;
     }
 `;
+
+const emailRegex= /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/;
 
 export default RegisterButton;
