@@ -2,6 +2,7 @@ import styled, { keyframes } from 'styled-components';
 import { Colors, Fonts } from './style.constant';
 
 export const FlexWrapper = styled.div`
+  margin: ${({ margin }) => margin ?? '0'};
   position: relative;
   display: flex;
   justify-content: ${({ justifyContent }) => justifyContent ?? 'center'};
