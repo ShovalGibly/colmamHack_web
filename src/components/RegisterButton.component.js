@@ -9,7 +9,7 @@ import { fireStore } from "../../firebase.config";
 // react hook form docs => https://react-hook-form.com/get-started
 
 function RegisterButton() {
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
     const { register, handleSubmit, errors } = useForm();
     
     const handleOpen = () => setIsOpen(true);
