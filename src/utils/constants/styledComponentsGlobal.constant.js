@@ -2,6 +2,7 @@ import styled, { keyframes } from 'styled-components';
 import { Colors, Fonts } from './style.constant';
 
 export const FlexWrapper = styled.div`
+  margin: ${({ margin }) => margin ?? '0'};
   position: relative;
   display: flex;
   justify-content: ${({ justifyContent }) => justifyContent ?? 'center'};
@@ -119,6 +120,17 @@ export const Link = styled.a`
   }
 `;
 
+const popupAnimation = keyframes`
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+`;
+
 export const PopupWrapper = styled(FlexWrapper)`
   display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
   position: fixed;
@@ -126,6 +138,24 @@ export const PopupWrapper = styled(FlexWrapper)`
   left: 0;
   height: 100vh;
   background-color: ${Colors.darkPurple + Colors.opacity90};
+  animation: ${popupAnimation} .5s linear;
+`;
+
+export const ClosingButton = styled.div`
+  position: fixed;
+  top: 15vh;
+  right: 20vw;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  @media screen and (max-width: 550px) {
+    top: unset;
+    bottom: 2rem;
+    right: 3rem;
+  }
 `;
 
 export const Popup = styled(FlexWrapper)`
@@ -138,6 +168,18 @@ export const Popup = styled(FlexWrapper)`
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
+  align-items: center;
+`;
+
+export const Error = styled.p`
+  color: ${Colors.turquoise};
+  margin: 0 1rem;
+  align-self: flex-end;
+
+  &::before {
+    display: inline;
+    content: "⚠ ";
+  }
 `;
 
 export const TextInput = styled.input`
@@ -150,6 +192,12 @@ export const TextInput = styled.input`
   width: 50rem;
   border: none;
   margin: 1rem;
+
+  @media screen and (max-width: 550px) {
+    padding: 5px;
+    margin: 0.5rem 0;
+    width: 80vw;
+  }
 `;
 
 export const SelectBox = styled.select`
@@ -162,6 +210,11 @@ export const SelectBox = styled.select`
   width: 24rem;
   border: none;
   margin: 1rem;
+
+  @media screen and (max-width: 550px) {
+    padding: 5px;
+    width: 37vw;
+  }
 `;
 
 export const TextArea = styled.textarea`
@@ -175,6 +228,12 @@ export const TextArea = styled.textarea`
   border: none;
   margin: 1rem;
   resize: none;
+  
+  @media screen and (max-width: 550px) {
+    padding: 5px;
+    margin: 0.5rem 0;
+    width: 80vw;
+  }
 `;
 
 export const Button = styled.button`
@@ -189,7 +248,6 @@ export const Button = styled.button`
   color: ${Colors.darkPurple};
   border: none;
   outline: none;
-  align-self: center;
 
   &:hover {
     transform: scale(1.1);

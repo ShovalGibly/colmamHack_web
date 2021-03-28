@@ -1,8 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import {
-  FlexWrapper,
-  Link,
-} from '../utils/constants/styledComponentsGlobal.constant';
+import { FlexWrapper, Link } from '../utils/constants/styledComponentsGlobal.constant';
 import { Colors } from '../utils/constants/style.constant';
 import logoPart1 from '../assets/logo-white.png';
 import logoPart2 from '../assets/logo-part-2.png';
