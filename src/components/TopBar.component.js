@@ -1,5 +1,8 @@
 import styled, { keyframes } from 'styled-components';
-import { FlexWrapper, Link } from '../utils/constants/styledComponentsGlobal.constant';
+import {
+  FlexWrapper,
+  Link,
+} from '../utils/constants/styledComponentsGlobal.constant';
 import { Colors } from '../utils/constants/style.constant';
 import logoPart1 from '../assets/logo-white.png';
 import logoPart2 from '../assets/logo-part-2.png';
@@ -35,7 +38,7 @@ const moveUpAnimation = keyframes`
 
 const shrinkLogoAnimation = keyframes`
   0% { transform: scale(1); left: 0; }
-  100% { transform: scale(.4); left: -25%; }
+  100% { transform: scale(.2); left: -35%; }
 `;
 
 const shrinkBackgroundAnimation = keyframes`
