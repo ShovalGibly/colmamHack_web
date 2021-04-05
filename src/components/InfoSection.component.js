@@ -4,7 +4,7 @@ import {
   FlexWrapper,
   MediumHeadLine,
   SplitLogo,
-  Text,
+  SmallHeadLine,
 } from '../utils/constants/styledComponentsGlobal.constant';
 import split from '../assets/split.png';
 
@@ -13,33 +13,22 @@ function InfoSection() {
     <FlexWrapper backgroundColor='darkPurple' height='100vh' id='info'>
       <InfoWrapper flexDirection='column' alignItems='flex-end' width='auto'>
         <MediumHeadLine color='turquoise'>who?</MediumHeadLine>
-        <Text dir='rtl'>
-          בית הספר למדעי המחשב בשיתוף חברת ספליט איט מזמינים אותכם/ן סטודנטים
-          לקחת חלק בהאקתון מאתגר בן עשרים ושש שעות בו תתעסקו יחד עם נציגי חברת
-          ספליט איט בשיפור חווית הקנייה בדיגיטל תוך הצעת פתרונות חדשניים לחברה
-          והכרת תחום התשלומים ברשתות
-        </Text>
+        <SmallHeadLine dir='rtl' color='white'>
+          צוותים של סטודנטים למדעי המחשב במכללה למנהל המעוניינים ליצור פרויקטים
+          ולאתגר את עצמם.
+        </SmallHeadLine>
         <MediumHeadLine color='turquoise'>when?</MediumHeadLine>
-        <Text dir='rtl'>
-          בית הספר למדעי המחשב בשיתוף חברת ספליט איט מזמינים אותכם/ן סטודנטים
-          לקחת חלק בהאקתון מאתגר בן עשרים ושש שעות בו תתעסקו יחד עם נציגי חברת
-          ספליט איט בשיפור חווית הקנייה בדיגיטל תוך הצעת פתרונות חדשניים לחברה
-          והכרת תחום התשלומים ברשתות
-        </Text>
+        <SmallHeadLine dir='rtl' color='white'>
+          25-26.4.2021
+        </SmallHeadLine>
         <MediumHeadLine color='turquoise'>where?</MediumHeadLine>
-        <Text dir='rtl'>
-          בית הספר למדעי המחשב בשיתוף חברת ספליט איט מזמינים אותכם/ן סטודנטים
-          לקחת חלק בהאקתון מאתגר בן עשרים ושש שעות בו תתעסקו יחד עם נציגי חברת
-          ספליט איט בשיפור חווית הקנייה בדיגיטל תוך הצעת פתרונות חדשניים לחברה
-          והכרת תחום התשלומים ברשתות
-        </Text>
+        <SmallHeadLine dir='rtl' color='white'>
+          מומלץ לקבוצות להפגש במקום אחד שבו יוכלו לעבוד ביחד.
+        </SmallHeadLine>
         <MediumHeadLine color='turquoise'>what?</MediumHeadLine>
-        <Text dir='rtl'>
-          בית הספר למדעי המחשב בשיתוף חברת ספליט איט מזמינים אותכם/ן סטודנטים
-          לקחת חלק בהאקתון מאתגר בן עשרים ושש שעות בו תתעסקו יחד עם נציגי חברת
-          ספליט איט בשיפור חווית הקנייה בדיגיטל תוך הצעת פתרונות חדשניים לחברה
-          והכרת תחום התשלומים ברשתות
-        </Text>
+        <SmallHeadLine dir='rtl' color='white'>
+          בניית פרויקטים בצוותים בנושא שיפור חוויות הקנייה בדיגיטל.
+        </SmallHeadLine>
       </InfoWrapper>
       <SectionHeadLine>
         <ExtraHeadLine>info</ExtraHeadLine>
