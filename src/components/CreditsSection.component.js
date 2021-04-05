@@ -1,12 +1,37 @@
 import styled from 'styled-components';
-import { FlexWrapper, MediumHeadLine, SmallHeadLine } from '../utils/constants/styledComponentsGlobal.constant';
+import {
+  FlexWrapper,
+  MediumHeadLine,
+  SmallHeadLine,
+} from '../utils/constants/styledComponentsGlobal.constant';
 import { organizers } from '../utils/constants/credits.constant';
 import split from '../assets/split-purple.png';
 import linkedIn from '../assets/linkedIn-logo.png';
 import facebookLogo from '../assets/facebook-logo.png';
+import tbdImage from '../assets/TBD.png';
 
+const TBD = [
+  {
+    name: 'TBD',
+    image: tbdImage,
+    facebookLink: '#',
+    linkedInLink: '#',
+  },
+  {
+    name: 'TBD',
+    image: tbdImage,
+    facebookLink: '#',
+    linkedInLink: '#',
+  },
+  {
+    name: 'TBD',
+    image: tbdImage,
+    facebookLink: '#',
+    linkedInLink: '#',
+  },
+];
 
-function CreditHeadLine({text}) {
+function CreditHeadLine({ text }) {
   return (
     <FlexWrapper width='auto' height='auto' margin='0 0 5rem'>
       <CustomHeadline color='turquoise'>{text}</CustomHeadline>
@@ -15,16 +40,24 @@ function CreditHeadLine({text}) {
   );
 }
 
-function CreditItem({linkedInLink='#', facebookLink='#', name='Full Name', image='https://image.shutterstock.com/image-illustration/male-default-avatar-profile-gray-260nw-582509287.jpg'}) {
+function CreditItem({
+  linkedInLink = '#',
+  facebookLink = '#',
+  name = 'Full Name',
+  image = 'https://image.shutterstock.com/image-illustration/male-default-avatar-profile-gray-260nw-582509287.jpg',
+}) {
   return (
     <FlexWrapper width='auto' height='auto' flexDirection='column'>
       <ItemImage src={image} />
       <SmallHeadLine color='white'> {name} </SmallHeadLine>
       <FlexWrapper>
-        <a href={facebookLink}><SocialLogo src={facebookLogo} /></a>
-        <a href={linkedInLink}><SocialLogo src={linkedIn} /></a>
+        <a href={facebookLink}>
+          <SocialLogo src={facebookLogo} />
+        </a>
+        <a href={linkedInLink}>
+          <SocialLogo src={linkedIn} />
+        </a>
       </FlexWrapper>
-      
     </FlexWrapper>
   );
 }
@@ -32,23 +65,38 @@ function CreditItem({linkedInLink='#', facebookLink='#', name='Full Name', image
 function CreditsSection() {
   return (
     <FlexWrapper height='auto' backgroundColor='darkPurple'>
-      <InnerWrapper flexDirection='column' alignItems='flex-start' >
+      <InnerWrapper flexDirection='column' alignItems='flex-start'>
         <CreditHeadLine text='Organizers' />
         <ItemsWrapper height='auto' justifyContent='flex-end'>
-          {organizers.map( ({linkedInLink, facebookLink, name, image}) => (
-              <CreditItem linkedInLink={linkedInLink} facebookLink={facebookLink} name={name} image={image} />
+          {organizers.map(({ linkedInLink, facebookLink, name, image }) => (
+            <CreditItem
+              linkedInLink={linkedInLink}
+              facebookLink={facebookLink}
+              name={name}
+              image={image}
+            />
           ))}
         </ItemsWrapper>
         <CreditHeadLine text='Mentors' />
         <ItemsWrapper height='auto' justifyContent='flex-end'>
-          {organizers.map( ({linkedInLink, facebookLink, name, image}) => (
-              <CreditItem linkedInLink={linkedInLink} facebookLink={facebookLink} name={name} image={image} />
+          {TBD.map(({ linkedInLink, facebookLink, name, image }) => (
+            <CreditItem
+              linkedInLink={linkedInLink}
+              facebookLink={facebookLink}
+              name={name}
+              image={image}
+            />
           ))}
         </ItemsWrapper>
         <CreditHeadLine text='Judges' />
         <ItemsWrapper height='auto' justifyContent='flex-end'>
-          {organizers.map( ({linkedInLink, facebookLink, name, image}) => (
-              <CreditItem linkedInLink={linkedInLink} facebookLink={facebookLink} name={name} image={image} />
+          {TBD.map(({ linkedInLink, facebookLink, name, image }) => (
+            <CreditItem
+              linkedInLink={linkedInLink}
+              facebookLink={facebookLink}
+              name={name}
+              image={image}
+            />
           ))}
         </ItemsWrapper>
       </InnerWrapper>
@@ -85,6 +133,5 @@ const SocialLogo = styled.img`
     transform: scale(1.2);
   }
 `;
-
 
 export default CreditsSection;

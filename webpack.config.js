@@ -1,23 +1,23 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const {ProvidePlugin} = require('webpack');
-const path = require("path");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { ProvidePlugin } = require('webpack');
+const path = require('path');
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: './src/index.js',
 
   output: {
-    filename: "bundle.[hash].js",
-    path: path.resolve(__dirname, "dist"),
+    filename: 'bundle.[hash].js',
+    path: path.resolve(__dirname, 'dist'),
   },
 
   plugins: [
-    new HtmlWebpackPlugin({ template: "./public/index.html"}),
-    new ProvidePlugin({ React: 'react'})
+    new HtmlWebpackPlugin({ template: './public/index.html' }),
+    new ProvidePlugin({ React: 'react' }),
   ],
 
   resolve: {
-    modules: [__dirname, "src", "node_modules"],
-    extensions: ["*", ".js", ".jsx", ".tsx", ".ts"],
+    modules: [__dirname, 'src', 'node_modules'],
+    extensions: ['*', '.js', '.jsx', '.tsx', '.ts'],
   },
 
   module: {
@@ -25,11 +25,11 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loader: require.resolve("babel-loader"),
+        loader: require.resolve('babel-loader'),
       },
       {
-        test: /\.png|svg|jpg|gif$/,
-        use: ["file-loader"],
+        test: /\.png|svg|jpg|gif|jpeg$/,
+        use: ['file-loader'],
       },
     ],
   },
