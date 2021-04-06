@@ -77,7 +77,7 @@ function CreditsSection() {
             />
           ))}
         </ItemsWrapper>
-        <CreditHeadLine text='Mentors' />
+        {/* <CreditHeadLine text='Mentors' />
         <ItemsWrapper height='auto' justifyContent='flex-end'>
           {TBD.map(({ linkedInLink, facebookLink, name, image }) => (
             <CreditItem
@@ -98,7 +98,7 @@ function CreditsSection() {
               image={image}
             />
           ))}
-        </ItemsWrapper>
+        </ItemsWrapper> */}
       </InnerWrapper>
     </FlexWrapper>
   );

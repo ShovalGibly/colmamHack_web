@@ -54,6 +54,15 @@ export const SmallHeadLine = styled(Headline)`
   }
 `;
 
+export const SizedHeadLine = styled(Headline)`
+  font-size: ${({ size }) => (size ? `${size}rem` : '2rem')};
+
+  @media screen and (max-width: 550px) {
+    font-size: ${({ size }) => (size ? `${size / 2}rem` : '1rem')};
+    margin: 0 0 0 ${({ size }) => (size ? `${size / 4}rem` : '0.5rem')};
+  }
+`;
+
 export const Space = styled.div`
   margin: 3rem;
 
@@ -138,7 +147,7 @@ export const PopupWrapper = styled(FlexWrapper)`
   left: 0;
   height: 100vh;
   background-color: ${Colors.darkPurple + Colors.opacity90};
-  animation: ${popupAnimation} .5s linear;
+  animation: ${popupAnimation} 0.5s linear;
 `;
 
 export const ClosingButton = styled.div`
@@ -178,7 +187,7 @@ export const Error = styled.p`
 
   &::before {
     display: inline;
-    content: "⚠ ";
+    content: '⚠ ';
   }
 `;
 
@@ -228,7 +237,7 @@ export const TextArea = styled.textarea`
   border: none;
   margin: 1rem;
   resize: none;
-  
+
   @media screen and (max-width: 550px) {
     padding: 5px;
     margin: 0.5rem 0;

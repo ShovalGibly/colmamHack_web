@@ -4,7 +4,7 @@ import {
   FlexWrapper,
   MediumHeadLine,
   SplitLogo,
-  SmallHeadLine,
+  SizedHeadLine,
 } from '../utils/constants/styledComponentsGlobal.constant';
 import split from '../assets/split.png';
 
@@ -13,22 +13,22 @@ function InfoSection() {
     <FlexWrapper backgroundColor='darkPurple' height='100vh' id='info'>
       <InfoWrapper flexDirection='column' alignItems='flex-end' width='auto'>
         <MediumHeadLine color='turquoise'>who?</MediumHeadLine>
-        <SmallHeadLine dir='rtl' color='white'>
+        <SizedHeadLine dir='rtl' color='white' size={4}>
           צוותים של סטודנטים למדעי המחשב במכללה למנהל המעוניינים ליצור פרויקטים
           ולאתגר את עצמם.
-        </SmallHeadLine>
+        </SizedHeadLine>
         <MediumHeadLine color='turquoise'>when?</MediumHeadLine>
-        <SmallHeadLine dir='rtl' color='white'>
+        <SizedHeadLine dir='rtl' color='white' size={4}>
           25-26.4.2021
-        </SmallHeadLine>
+        </SizedHeadLine>
         <MediumHeadLine color='turquoise'>where?</MediumHeadLine>
-        <SmallHeadLine dir='rtl' color='white'>
+        <SizedHeadLine dir='rtl' color='white' size={4}>
           מומלץ לקבוצות להפגש במקום אחד שבו יוכלו לעבוד ביחד.
-        </SmallHeadLine>
+        </SizedHeadLine>
         <MediumHeadLine color='turquoise'>what?</MediumHeadLine>
-        <SmallHeadLine dir='rtl' color='white'>
+        <SizedHeadLine dir='rtl' color='white' size={4}>
           בניית פרויקטים בצוותים בנושא שיפור חוויות הקנייה בדיגיטל.
-        </SmallHeadLine>
+        </SizedHeadLine>
       </InfoWrapper>
       <SectionHeadLine>
         <ExtraHeadLine>info</ExtraHeadLine>
