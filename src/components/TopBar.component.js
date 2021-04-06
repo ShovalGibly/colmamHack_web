@@ -53,7 +53,7 @@ const TopBarWrapper = styled(FlexWrapper)`
 
   background-color: ${Colors.darkPurple};
   padding: 5rem 10rem;
-  z-index: 1;
+  z-index: 2;
   height: 100vh;
 
   animation-name: ${shrinkBackgroundAnimation};

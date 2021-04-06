@@ -56,6 +56,7 @@ export const SmallHeadLine = styled(Headline)`
 
 export const SizedHeadLine = styled(Headline)`
   font-size: ${({ size }) => (size ? `${size}rem` : '2rem')};
+  margin: 0 0 3rem;
 
   @media screen and (max-width: 550px) {
     font-size: ${({ size }) => (size ? `${size / 2}rem` : '1rem')};
@@ -146,6 +147,7 @@ export const PopupWrapper = styled(FlexWrapper)`
   top: 0;
   left: 0;
   height: 100vh;
+  z-index: 2;
   background-color: ${Colors.darkPurple + Colors.opacity90};
   animation: ${popupAnimation} 0.5s linear;
 `;

@@ -12,6 +12,7 @@ import {
   Space,
   ClosingButton,
   Error,
+  Text,
 } from '../utils/constants/styledComponentsGlobal.constant';
 import closeButton from '../assets/close-button.png';
 import { useForm } from 'react-hook-form';
@@ -26,24 +27,25 @@ function RegisterButton() {
   const handleOpen = () => setIsOpen(true);
   const handleClose = () => setIsOpen(false);
   const onSubmit = (data) => {
-    fireStore
-      .collection('participants')
-      .doc(data.email)
-      .get()
-      .then((currentEmail) => {
-        if (currentEmail.exists) return alert('אימייל קיים במערכת');
-        fireStore
-          .collection('participants')
-          .doc(data.email)
-          .set(data)
-          .then(() => {
-            alert('תודה שנרשמת!');
-            handleClose();
-          })
-          .catch(() => {
-            alert('לא הצלחנו לרשום אותך למערכת, אנא נסה מאוחר יותר.');
-          });
-      });
+    console.log(data);
+    // fireStore
+    //   .collection('participants')
+    //   .doc(data.email)
+    //   .get()
+    //   .then((currentEmail) => {
+    //     if (currentEmail.exists) return alert('אימייל קיים במערכת');
+    //     fireStore
+    //       .collection('participants')
+    //       .doc(data.email)
+    //       .set(data)
+    //       .then(() => {
+    //         alert('תודה שנרשמת!');
+    //         handleClose();
+    //       })
+    //       .catch(() => {
+    //         alert('לא הצלחנו לרשום אותך למערכת, אנא נסה מאוחר יותר.');
+    //       });
+    //   });
   };
 
   return (
@@ -90,6 +92,19 @@ function RegisterButton() {
               <Error dir='rtl'> אנא הכנס מספר טלפון תקין </Error>
             )}
             <TextInput
+              ref={register({ required: true, minLength: 9, maxLength: 9, pattern: /^[0-9]*$/ })}
+              name='id'
+              type='tel'
+              dir='rtl'
+              placeholder=' ת.ז '
+            />
+            {errors.id && (
+              <Error dir='rtl'>
+                {' '}
+                אנא הכנס מספר זהות תקין בעל 9 ספרות
+              </Error>
+            )}
+            <TextInput
               ref={register({ required: true, minLength: 2, maxLength: 25 })}
               name='groupName'
               type='text'
@@ -102,6 +117,19 @@ function RegisterButton() {
                 אנא הכנס שם קבוצה או כתוב אין קבוצה אם אין{' '}
               </Error>
             )}
+            <TextInput
+              ref={register({ minLength: 2, maxLength: 200 })}
+              name='members'
+              type='text'
+              dir='rtl'
+              placeholder=' אנא ציינ/י שמות סטודנטים לקבוצה מופרדים בפסיק (לא חובה )  '
+            />
+            {errors.members && (
+              <Error dir='rtl'>
+                {' '}
+                עד 200 תווים{' '}
+              </Error>
+            )}
             <SelectWrapper
               justifyContent='space-between'
               flexDirection='row-reverse'
@@ -112,23 +140,28 @@ function RegisterButton() {
                 dir='rtl'
               >
                 <option value=''> שנת לימוד </option>
-                <option value='year1'> שנה א </option>
                 <option value='year2'> שנה ב </option>
                 <option value='year3'> שנה ג </option>
+                <option value='other'> אחר </option>
               </SelectBox>
               <SelectBox
                 ref={register({ validate: (value) => value !== '' })}
-                name='studyField'
+                name='studyRoute'
                 dir='rtl'
               >
-                <option value=''> סוג התואר </option>
-                <option value='computerScience'> מדעי המחשב </option>
-                <option value='design'> עיצוב </option>
-                <option value='other'> אחר </option>
+                <option value=''> מסלול </option>
+                <option value='morning'> בוקר </option>
+                <option value='evening'> ערב </option>
+                <option value='avaz'> אב"צ  </option>
+                <option value='alaz'> אל"צ  </option>
               </SelectBox>
             </SelectWrapper>
             {errors.studyYear && <Error dir='rtl'> אנא בחר שנת לימוד </Error>}
             {errors.studyField && <Error dir='rtl'> אנא בחר סוג תואר </Error>}
+            <SelectWrapper justifyContent='flex-end' width='95%'>              
+              <label  dir='rtl' for="participatedInHack" style={{marginRight: '1rem', color: 'white'}}> השתתפתי בעבר בהקאתון </label>
+              <input type='checkbox' name='participatedInHack' ref={register()}/>
+            </SelectWrapper>
             <TextArea
               ref={register}
               name='aboutSelf'
@@ -136,6 +169,11 @@ function RegisterButton() {
               dir='rtl'
               placeholder='ספר/י על עצמך בכמה מילים'
             />
+            <Text dir='rtl' width='50rem' fontSize='1rem'>
+              על כל סטודנט.ית לבצע הרשמה ! ההרשמה פתוחה לסטודנטים בשנים ב' וג' ומסלול אל"צ ד' ה' בהתאמה.
+              סטודנטים משנה א' המעוניינים להשתתף יוכלו להגיש בקשה בנפרד למייל זה : Colmanhackathon@gmail.com
+              <b> ** הרשמה אינה מבטיחה השתתפות בהאקתון. אישור השתתפות יישלח לאחר סגירת ההרשמה. </b>
+            </Text>
             <Button> שלח </Button>
           </Form>
         </Popup>
@@ -153,6 +191,7 @@ const FloatingButton = styled(Button)`
   width: 20rem;
   height: 5rem;
   border-radius: 5px;
+  z-index: 2;
 
   &:hover {
     transform: scale(1.1);

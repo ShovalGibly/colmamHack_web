@@ -13,20 +13,20 @@ function InfoSection() {
     <FlexWrapper backgroundColor='darkPurple' height='100vh' id='info'>
       <InfoWrapper flexDirection='column' alignItems='flex-end' width='auto'>
         <MediumHeadLine color='turquoise'>who?</MediumHeadLine>
-        <SizedHeadLine dir='rtl' color='white' size={4}>
+        <SizedHeadLine dir='rtl' color='white' size={3}>
           צוותים של סטודנטים למדעי המחשב במכללה למנהל המעוניינים ליצור פרויקטים
           ולאתגר את עצמם.
         </SizedHeadLine>
         <MediumHeadLine color='turquoise'>when?</MediumHeadLine>
-        <SizedHeadLine dir='rtl' color='white' size={4}>
+        <SizedHeadLine dir='rtl' color='white' size={3}>
           25-26.4.2021
         </SizedHeadLine>
         <MediumHeadLine color='turquoise'>where?</MediumHeadLine>
-        <SizedHeadLine dir='rtl' color='white' size={4}>
+        <SizedHeadLine dir='rtl' color='white' size={3}>
           מומלץ לקבוצות להפגש במקום אחד שבו יוכלו לעבוד ביחד.
         </SizedHeadLine>
         <MediumHeadLine color='turquoise'>what?</MediumHeadLine>
-        <SizedHeadLine dir='rtl' color='white' size={4}>
+        <SizedHeadLine dir='rtl' color='white' size={3}>
           בניית פרויקטים בצוותים בנושא שיפור חוויות הקנייה בדיגיטל.
         </SizedHeadLine>
       </InfoWrapper>
