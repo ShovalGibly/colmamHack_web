@@ -168,7 +168,7 @@ function RegisterButton() {
               dir='rtl'
               placeholder='ספר/י על עצמך בכמה מילים'
             />
-            <Text dir='rtl' width='50rem' fontSize='1rem'>
+            <Text dir='rtl' width='50rem' fontSize='1.3rem'>
               על כל סטודנט.ית לבצע הרשמה ! ההרשמה פתוחה לסטודנטים בשנים ב' וג' ומסלול אל"צ ד' ה' בהתאמה.
               סטודנטים משנה א' המעוניינים להשתתף יוכלו להגיש בקשה בנפרד למייל זה : Colmanhackathon@gmail.com
               <b> ** הרשמה אינה מבטיחה השתתפות בהאקתון. אישור השתתפות יישלח לאחר סגירת ההרשמה. </b>

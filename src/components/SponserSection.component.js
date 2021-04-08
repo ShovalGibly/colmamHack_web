@@ -17,7 +17,7 @@ function SponserSection() {
         color='darkPurpil'
         textAlign='center'
       >
-        הפרסים והתחרות בחסות חברת ספליט איט בהשתתפות בית הספר למדעי המחשב ואגודת
+        הפרסים והתחרות בחסות חברת Split It בהשתתפות בית הספר למדעי המחשב ואגודת
         הסטודנטים
       </Text>
       <FlexWrapper height='auto' justifyContent='space-around'>
