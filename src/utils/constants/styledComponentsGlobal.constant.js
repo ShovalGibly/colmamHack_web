@@ -12,6 +12,11 @@ export const FlexWrapper = styled.div`
   height: ${({ height }) => height ?? '100%'};
   background-color: ${({ backgroundColor }) =>
     Colors[backgroundColor] ?? backgroundColor ?? 'transparent'};
+
+  @media screen and (max-width: 550px) {
+    flex-direction: ${({ flexDirectionMobile, flexDirection }) => flexDirectionMobile ?? flexDirection ?? 'row'};
+    margin: ${({ marginMobile, margin }) => marginMobile ?? margin ?? '0'};
+  }
 `;
 
 const Headline = styled.p`
@@ -73,7 +78,7 @@ export const Space = styled.div`
 `;
 
 export const Text = styled.p`
-  margin: 0 0 1rem;
+  margin: ${({ margin }) => margin ?? '0 0 1rem'};
   text-align: ${({ textAlign }) => textAlign ?? 'right'};
   font-size: ${({ fontSize }) => fontSize ?? '1.6rem'};
   color: ${({ color }) => Colors[color] ?? color ?? Colors.white};
