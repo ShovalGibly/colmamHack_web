@@ -44,6 +44,7 @@ const InfoWrapper = styled(FlexWrapper)`
 
   @media screen and (max-width: 550px) {
     left: 0;
+    padding: 0 1.5rem;
   }
 `;
 

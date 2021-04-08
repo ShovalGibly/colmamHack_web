@@ -60,7 +60,7 @@ export const SizedHeadLine = styled(Headline)`
 
   @media screen and (max-width: 550px) {
     font-size: ${({ size }) => (size ? `${size / 2}rem` : '1rem')};
-    margin: 0 0 0 ${({ size }) => (size ? `${size / 4}rem` : '0.5rem')};
+    margin: 1rem 0 3rem ${({ size }) => (size ? `${size / 4}rem` : '0.5rem')};
   }
 `;
 
@@ -157,6 +157,7 @@ export const ClosingButton = styled.div`
   top: 15vh;
   right: 20vw;
   cursor: pointer;
+  z-index: 3;
 
   &:hover {
     transform: scale(1.1);

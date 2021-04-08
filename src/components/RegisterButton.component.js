@@ -27,25 +27,24 @@ function RegisterButton() {
   const handleOpen = () => setIsOpen(true);
   const handleClose = () => setIsOpen(false);
   const onSubmit = (data) => {
-    console.log(data);
-    // fireStore
-    //   .collection('participants')
-    //   .doc(data.email)
-    //   .get()
-    //   .then((currentEmail) => {
-    //     if (currentEmail.exists) return alert('אימייל קיים במערכת');
-    //     fireStore
-    //       .collection('participants')
-    //       .doc(data.email)
-    //       .set(data)
-    //       .then(() => {
-    //         alert('תודה שנרשמת!');
-    //         handleClose();
-    //       })
-    //       .catch(() => {
-    //         alert('לא הצלחנו לרשום אותך למערכת, אנא נסה מאוחר יותר.');
-    //       });
-    //   });
+    fireStore
+      .collection('participants')
+      .doc(data.email)
+      .get()
+      .then((currentEmail) => {
+        if (currentEmail.exists) return alert('אימייל קיים במערכת');
+        fireStore
+          .collection('participants')
+          .doc(data.email)
+          .set(data)
+          .then(() => {
+            alert('תודה שנרשמת!');
+            handleClose();
+          })
+          .catch(() => {
+            alert('לא הצלחנו לרשום אותך למערכת, אנא נסה מאוחר יותר.');
+          });
+      });
   };
 
   return (

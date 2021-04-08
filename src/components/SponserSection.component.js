@@ -46,7 +46,7 @@ const Logo = styled.img`
   height: 30rem;
 
   @media screen and (max-width: 550px) {
-    height: 1rem;
+    height: 13rem;
   }
 `;
 
@@ -55,7 +55,7 @@ const LogoColman = styled.img`
   height: 12rem;
 
   @media screen and (max-width: 550px) {
-    height: 1rem;
+    height: 5rem;
   }
 `;
 

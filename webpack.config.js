@@ -8,7 +8,7 @@ module.exports = {
 
   output: {
     filename: 'bundle.[hash].js',
-    path: path.resolve(__dirname, 'src/build'),
+    path: path.resolve(__dirname, 'public/build'),
   },
 
   plugins: [

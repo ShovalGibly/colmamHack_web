@@ -65,6 +65,9 @@ const TopBarWrapper = styled(FlexWrapper)`
 
   @media screen and (max-width: 550px) {
     padding: 2rem;
+    animation-fill-mode: none;
+    height: 10vh;
+    display: none;
   }
 `;
 
@@ -78,6 +81,7 @@ const LogoWrapper = styled.div`
   animation-timing-function: linear;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  
 `;
 
 const LogoPartOne = styled.img`

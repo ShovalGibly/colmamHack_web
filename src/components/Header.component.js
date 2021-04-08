@@ -11,11 +11,8 @@ function Header() {
     <FlexWrapper
       flexDirection='column'
       backgroundColor='darkPurple'
-      height='100vh'
-      justifyContent='flex-start'
+      height='90vh'
     >
-      <Space />
-      <Space />
       <BigHeadLine>WE START IN</BigHeadLine>
       <CountDownTimer date='apr 26, 2021 12:00:00' />
       <Space />
