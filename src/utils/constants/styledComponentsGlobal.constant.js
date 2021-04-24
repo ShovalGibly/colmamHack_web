@@ -82,7 +82,7 @@ export const Text = styled.p`
   text-align: ${({ textAlign }) => textAlign ?? 'right'};
   font-size: ${({ fontSize }) => fontSize ?? '1.6rem'};
   color: ${({ color }) => Colors[color] ?? color ?? Colors.white};
-  width: ${({ width }) => width ?? '60rem'};
+  width: ${({ width }) => width ?? '62rem'};
 
   @media screen and (max-width: 550px) {
     font-size: 1rem;

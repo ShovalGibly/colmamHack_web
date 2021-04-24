@@ -12,7 +12,7 @@ function SponserSection() {
     <FlexWrapper height='70vh' backgroundColor='white' flexDirection='column'>
       <Text
         dir='rtl'
-        width='80%'
+        width='65%'
         fontSize='3rem'
         color='darkPurpil'
         textAlign='center'
@@ -20,11 +20,11 @@ function SponserSection() {
         הפרסים והתחרות בחסות חברת Split It בהשתתפות בית הספר למדעי המחשב ואגודת
         הסטודנטים
       </Text>
-      <FlexWrapper height='auto' justifyContent='space-around'>
+      <FlexWrapper width='63%' height='auto' justifyContent='space-between'>
         <Logo src={logoSplitIt} />
         <LogoColman src={logoColman} />
       </FlexWrapper>
-      <Text width='50%' color='darkPurpil' textAlign='justify'>
+      <Text width='63%' color='darkPurpil' textAlign='justify'>
         Splitit is a global payment solution provider that enables shoppers to
         use the credit they’ve earned by breaking up purchases into monthly
         interest-free installments, using their existing credit card. Splitit
