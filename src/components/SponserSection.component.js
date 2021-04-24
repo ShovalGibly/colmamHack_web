@@ -6,6 +6,7 @@ import {
 } from '../utils/constants/styledComponentsGlobal.constant';
 import logoSplitIt from '../assets/logo-split-it.png';
 import logoColman from '../assets/logo-colman.png';
+import logoAguda from '../assets/logo-aguda.png';
 
 function SponserSection() {
   return (
@@ -21,6 +22,7 @@ function SponserSection() {
         הסטודנטים
       </Text>
       <FlexWrapper width='63%' height='auto' justifyContent='space-between'>
+        <Logo src={logoAguda} style={{height: '8rem'}} />
         <Logo src={logoSplitIt} />
         <LogoColman src={logoColman} />
       </FlexWrapper>

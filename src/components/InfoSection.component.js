@@ -19,11 +19,11 @@ function InfoSection() {
         </SizedHeadLine>
         <MediumHeadLine color='turquoise'>when?</MediumHeadLine>
         <SizedHeadLine dir='rtl' color='white' size={3}>
-          25-26.4.2021
+          30-31.5.2021 ויום הכנה ב 23.5
         </SizedHeadLine>
         <MediumHeadLine color='turquoise'>where?</MediumHeadLine>
         <SizedHeadLine dir='rtl' color='white' size={3}>
-          מומלץ לקבוצות להפגש במקום אחד שבו יוכלו לעבוד ביחד.
+          במכללה בהתאם להנחיות התו הסגול (גם ללא מחוסנים)
         </SizedHeadLine>
         <MediumHeadLine color='turquoise'>what?</MediumHeadLine>
         <SizedHeadLine dir='rtl' color='white' size={3}>
