@@ -8,13 +8,15 @@ export const FlexWrapper = styled.div`
   justify-content: ${({ justifyContent }) => justifyContent ?? 'center'};
   align-items: ${({ alignItems }) => alignItems ?? 'center'};
   flex-direction: ${({ flexDirection }) => flexDirection ?? 'row'};
+  ${({ wrap }) => (wrap ? 'flex-wrap: wrap;' : '')}
   width: ${({ width }) => width ?? '100%'};
-  height: ${({ height }) => height ?? '100%'};
+  min-height: ${({ height }) => height ?? '100%'};
   background-color: ${({ backgroundColor }) =>
     Colors[backgroundColor] ?? backgroundColor ?? 'transparent'};
 
   @media screen and (max-width: 550px) {
-    flex-direction: ${({ flexDirectionMobile, flexDirection }) => flexDirectionMobile ?? flexDirection ?? 'row'};
+    flex-direction: ${({ flexDirectionMobile, flexDirection }) =>
+      flexDirectionMobile ?? flexDirection ?? 'row'};
     margin: ${({ marginMobile, margin }) => marginMobile ?? margin ?? '0'};
   }
 `;

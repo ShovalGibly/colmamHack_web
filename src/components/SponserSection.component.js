@@ -21,7 +21,7 @@ function SponserSection() {
         הפרסים והתחרות בחסות חברת Split It בהשתתפות בית הספר למדעי המחשב ואגודת
         הסטודנטים
       </Text>
-      <FlexWrapper width='63%' height='auto' justifyContent='space-between'>
+      <FlexWrapper width='63%' height='auto' justifyContent='space-between' wrap>
         <Logo src={logoAguda} style={{height: '8rem'}} />
         <Logo src={logoSplitIt} />
         <LogoColman src={logoColman} />
