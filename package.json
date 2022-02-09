@@ -23,6 +23,7 @@
     "@babel/preset-react": "^7.12.13",
     "babel-loader": "^8.2.2",
     "dotenv": "^8.2.0",
+    "dotenv-webpack": "^7.0.2",
     "firebase": "^8.3.1",
     "html-webpack-plugin": "^5.3.1",
     "react": "^17.0.2",
@@ -32,8 +33,7 @@
     "uniqid": "^5.3.0",
     "webpack": "^5.28.0",
     "webpack-cli": "^4.5.0",
-    "webpack-dev-server": "^3.11.2",
-    "dotenv-webpack": "^7.0.2"
+    "webpack-dev-server": "^3.11.2"
   },
   "devDependencies": {
     "file-loader": "^6.2.0"

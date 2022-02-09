@@ -89,7 +89,7 @@ export const StripedDataTableWrapper = styled.table`
 export const TableHead = styled.thead`
     & tr {
         color: ${Colors.white};
-        background-color: ${Colors.lightPurple};
+        background-color: ${Colors.lightBlue};
         font-size: 1.3rem;
         letter-spacing: 1px;
     }
@@ -97,7 +97,7 @@ export const TableHead = styled.thead`
 
 export const TableBody = styled.tbody`
     & tr:nth-child(even) {
-        background-color: ${Colors.lightPurple}${Colors.opacity40};
+        background-color: ${Colors.lightBlue}${Colors.opacity40};
     }
 `;
 

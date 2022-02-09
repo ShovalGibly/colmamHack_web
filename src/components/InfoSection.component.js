@@ -19,7 +19,7 @@ function InfoSection() {
         </SizedHeadLine>
         <MediumHeadLine color='turquoise'>when?</MediumHeadLine>
         <SizedHeadLine dir='rtl' color='white' size={3}>
-          30-31.5.2021 ויום הכנה ב 23.5
+          03-04.4.2022 ויום הכנה בX
         </SizedHeadLine>
         <MediumHeadLine color='turquoise'>where?</MediumHeadLine>
         <SizedHeadLine dir='rtl' color='white' size={3}>
