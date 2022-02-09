@@ -33,7 +33,7 @@ const Overlay = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: ${Colors.lightBlue};
+  background-color: ${Colors.lightPurple};
   z-index: 1;
   opacity: 0.2;
 `;

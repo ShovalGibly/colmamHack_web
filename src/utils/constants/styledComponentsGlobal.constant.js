@@ -25,7 +25,7 @@ const Headline = styled.p`
   font-family: ${Fonts.main};
   text-transform: uppercase;
   margin: ${({ margin }) => margin ?? '0'};
-  color: ${({ color }) => Colors[color] ?? color ?? Colors.lightBlue};
+  color: ${({ color }) => Colors[color] ?? color ?? Colors.lightPurple};
 `;
 
 export const ExtraHeadLine = styled(Headline)`

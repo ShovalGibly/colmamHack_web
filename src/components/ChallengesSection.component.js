@@ -10,7 +10,7 @@ function ChallengesSection() {
   return (
     <FlexWrapper
       height='100vh'
-      backgroundColor='lightBlue'
+      backgroundColor='lightPurple'
       flexDirection='column'
     >
       <MediumHeadLine color='darkPurple'> THE CHALLENGES</MediumHeadLine>
