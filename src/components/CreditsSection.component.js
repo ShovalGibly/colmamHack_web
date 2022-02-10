@@ -34,7 +34,7 @@ const TBD = [
 function CreditHeadLine({ text }) {
   return (
     <FlexWrapper width='auto' height='auto' margin='0 0 5rem'>
-      <CustomHeadline color='turquoise'>{text}</CustomHeadline>
+      <CustomHeadline color='pink'>{text}</CustomHeadline>
       <img src={split} />
     </FlexWrapper>
   );
@@ -64,7 +64,7 @@ function CreditItem({
 
 function CreditsSection() {
   return (
-    <FlexWrapper height='auto' backgroundColor='darkPurple'>
+    <FlexWrapper height='auto' backgroundColor='white'>
       <InnerWrapper flexDirection='column' alignItems='flex-start'>
         <CreditHeadLine text='Organizers' />
         <ItemsWrapper height='auto' justifyContent='flex-end'>

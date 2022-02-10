@@ -10,13 +10,13 @@ function ChallengesSection() {
   return (
     <FlexWrapper
       height='100vh'
-      backgroundColor='lightPurple'
+      backgroundColor='#1E1E9A'
       flexDirection='column'
     >
       <MediumHeadLine color='darkPurple'> THE CHALLENGES</MediumHeadLine>
       <FlexWrapper height='15vh' width='70%' justifyContent='flex-start' flexDirectionMobile='column' marginMobile='2rem 0'>
         <FlexWrapper width='auto'>
-          <MediumHeadLine color='turquoise'>PAYMENTS</MediumHeadLine>
+          <MediumHeadLine color='pink'>PAYMENTS</MediumHeadLine>
           <SplitLogo height='5rem' src={split} />
         </FlexWrapper>
         <Text margin='0 4rem' textAlign='left' width='auto'>
@@ -26,7 +26,7 @@ function ChallengesSection() {
       </FlexWrapper>
       <FlexWrapper height='15vh' width='70%' justifyContent='flex-start' flexDirectionMobile='column' marginMobile='2rem 0'>
         <FlexWrapper width='auto'>
-          <MediumHeadLine color='turquoise'>MOBILE</MediumHeadLine>
+          <MediumHeadLine color='pink'>MOBILE</MediumHeadLine>
           <SplitLogo height='5rem' src={split} />
         </FlexWrapper>
         <Text margin='0 4rem' textAlign='left' width='auto'>
@@ -35,7 +35,7 @@ function ChallengesSection() {
       </FlexWrapper>
       <FlexWrapper height='15vh' width='70%' justifyContent='flex-start' flexDirectionMobile='column' marginMobile='2rem 0'>
         <FlexWrapper width='auto'>
-          <MediumHeadLine color='turquoise'>INTEGRATIONS</MediumHeadLine>
+          <MediumHeadLine color='pink'>INTEGRATIONS</MediumHeadLine>
           <SplitLogo height='5rem' src={split} />
         </FlexWrapper>
         <Text margin='0 4rem' textAlign='left' width='auto'>
@@ -44,7 +44,7 @@ function ChallengesSection() {
       </FlexWrapper>
       <FlexWrapper height='15vh' width='70%' justifyContent='flex-start' flexDirectionMobile='column' marginMobile='2rem 0'>
         <FlexWrapper width='auto'>
-          <MediumHeadLine color='turquoise'>DATA</MediumHeadLine>
+          <MediumHeadLine color='pink'>DATA</MediumHeadLine>
           <SplitLogo height='5rem' src={split} />
         </FlexWrapper>
         <Text margin='0 4rem' textAlign='left' width='auto'>

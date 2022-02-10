@@ -38,7 +38,7 @@ export const ExtraHeadLine = styled(Headline)`
 
 export const BigHeadLine = styled(Headline)`
   font-size: 13.7rem;
-
+  // color: blue;
   @media screen and (max-width: 550px) {
     font-size: 4rem;
   }
@@ -46,7 +46,6 @@ export const BigHeadLine = styled(Headline)`
 
 export const MediumHeadLine = styled(Headline)`
   font-size: 8.5rem;
-
   @media screen and (max-width: 550px) {
     font-size: 4rem;
   }
