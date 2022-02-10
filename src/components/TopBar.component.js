@@ -4,15 +4,15 @@ import {
   Link,
 } from '../utils/constants/styledComponentsGlobal.constant';
 import { Colors } from '../utils/constants/style.constant';
-import logoPart1 from '../assets/logo-white.png';
-import logoPart2 from '../assets/logo-part-2.png';
+import logoPart1 from '../assets/spot_logo .png';
+// import logoPart2 from '../assets/logo-part-2.png';
 
 function TopBar() {
   return (
     <TopBarWrapper justifyContent='space-between'>
       <LogoWrapper>
         <LogoPartOne src={logoPart1} />
-        <LogoPartTwo src={logoPart2} />
+        {/* <LogoPartTwo src={logoPart2} /> */}
       </LogoWrapper>
       <Links height='auto' justifyContent='flex-end'>
         <Link href='#info'> מידע נוסף </Link>
@@ -38,7 +38,7 @@ const moveUpAnimation = keyframes`
 
 const shrinkLogoAnimation = keyframes`
   0% { transform: scale(1); left: 0; }
-  100% { transform: scale(.2); left: -35%; }
+  100% { transform: scale(.2); left: -25%; }
 `;
 
 const shrinkBackgroundAnimation = keyframes`
@@ -86,9 +86,11 @@ const LogoWrapper = styled.div`
 
 const LogoPartOne = styled.img`
   position: relative;
-  height: 5vw; //3rem
+  // height: auto //3rem
   opacity: 0;
   left: 20%;
+  max-width: 100%;  
+  height: auto;  
 
   animation-name: ${fadeInAnimation}, ${moveRightAnimation};
   animation-duration: 0.5s;
@@ -102,22 +104,22 @@ const LogoPartOne = styled.img`
   }
 `;
 
-const LogoPartTwo = styled.img`
-  position: relative;
-  height: 5vw; //3ewm
-  opacity: 0;
+// const LogoPartTwo = styled.img`
+//   position: relative;
+//   height: 5vw; //3ewm
+//   opacity: 0;
 
-  animation-name: ${moveRightAnimation}, ${fadeInAnimation};
-  animation-duration: 0.5s;
-  animation-delay: 0.8s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+//   animation-name: ${moveRightAnimation}, ${fadeInAnimation};
+//   animation-duration: 0.5s;
+//   animation-delay: 0.8s;
+//   animation-timing-function: ease-in;
+//   animation-iteration-count: 1;
+//   animation-fill-mode: forwards;
 
-  @media screen and (max-width: 550px) {
-    height: 2rem; //1rem
-  }
-`;
+//   @media screen and (max-width: 550px) {
+//     height: 2rem; //1rem
+//   }
+// `;
 
 const Links = styled(FlexWrapper)`
   opacity: 0;

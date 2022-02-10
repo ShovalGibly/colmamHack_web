@@ -1,9 +1,9 @@
 export const Colors = {
   // primary colors
-  darkPurple: '#1C1828',
-  lightPurple: '#8000DB',
-  turquoise: '#5AF3CC',
-  white: '#EFEFEF',
+  darkPurple: '#EFEFEF',
+  lightPurple: '#0086FF',
+  turquoise: '#FF00CE',
+  white: '#000',
 
 
   // --white: #fff;
