@@ -4,7 +4,7 @@ import {
   SplitLogo,
   Text,
 } from '../utils/constants/styledComponentsGlobal.constant';
-import split from '../assets/split.png';
+import split from '../assets/dots.png';
 
 function ChallengesSection() {
   return (

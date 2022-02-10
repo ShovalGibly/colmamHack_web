@@ -75,7 +75,6 @@ const TopBarWrapper = styled(FlexWrapper)`
 const LogoWrapper = styled.div`
   display: flex;
   position: relative;
-  // color: '#000';
 
   animation-name: ${moveUpAnimation}, ${shrinkLogoAnimation};
   animation-duration: 0.5s;
@@ -125,7 +124,7 @@ const LogoPartOne = styled.img`
 
 const Links = styled(FlexWrapper)`
   opacity: 0;
-
+  color: 'black';
   animation-name: ${fadeInAnimation};
   animation-duration: 0.5s;
   animation-delay: 2s;
