@@ -5,7 +5,6 @@ import {
   SmallHeadLine,
 } from '../utils/constants/styledComponentsGlobal.constant';
 import { organizers } from '../utils/constants/credits.constant';
-import split from '../assets/split-purple.png';
 import linkedIn from '../assets/linkedIn-logo.png';
 import facebookLogo from '../assets/facebook-logo.png';
 import tbdImage from '../assets/TBD.png';
@@ -35,7 +34,6 @@ function CreditHeadLine({ text }) {
   return (
     <FlexWrapper width='auto' height='auto' margin='0 0 5rem'>
       <CustomHeadline color='pink'>{text}</CustomHeadline>
-      <img src={split} />
     </FlexWrapper>
   );
 }
@@ -49,7 +47,7 @@ function CreditItem({
   return (
     <FlexWrapper width='auto' height='auto' flexDirection='column'>
       <ItemImage src={image} />
-      <SmallHeadLine color='white'> {name} </SmallHeadLine>
+      <SmallHeadLine color='blue'> {name} </SmallHeadLine>
       <FlexWrapper>
         <a href={facebookLink}>
           <SocialLogo src={facebookLogo} />
@@ -64,7 +62,7 @@ function CreditItem({
 
 function CreditsSection() {
   return (
-    <FlexWrapper height='auto' backgroundColor='white'>
+    <FlexWrapper height='auto' backgroundColor='gray'>
       <InnerWrapper flexDirection='column' alignItems='flex-start'>
         <CreditHeadLine text='Organizers' />
         <ItemsWrapper height='auto' justifyContent='flex-end'>

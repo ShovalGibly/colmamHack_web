@@ -5,14 +5,14 @@ import {
   MediumHeadLine,
   SplitLogo,
 } from '../utils/constants/styledComponentsGlobal.constant';
-import split from '../assets/split.png';
+import split from '../assets/dots.png';
 
 function AwardsSection() {
   return (
     <FlexWrapper
       flexDirection='column'
       height='100vh'
-      backgroundColor='white'
+      backgroundColor='gray'
     >
       <BigHeadLine color='black'> Awards </BigHeadLine>
       <AwardWrapper height='auto'>

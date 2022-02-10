@@ -4,7 +4,7 @@ import uniqid from 'uniqid';
 import styled from "styled-components";
 import { BigHeadLine, FlexWrapper, SmallHeadLine, Loader } from "../utils/constants/styledComponentsGlobal.constant";
 
-function CountDownTimer({date='may 30, 2021 12:00:00'}){
+function CountDownTimer({date='april 03, 2022 12:00:00'}){
     const [countDownState, setCountDownState] = useState({days: 0, hours: 0, minutes: 0, secounds: 0});
     const [showCountDown, setShowCountDown] = useState(false);
     const timerInterval = useRef();

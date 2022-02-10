@@ -124,7 +124,7 @@ export const SplitLogo = styled.img`
 
 export const Link = styled.a`
   font-size: 1.6rem;
-  color: ${Colors.white};
+  color: ${Colors.black};
   text-decoration: none;
 
   &:hover {

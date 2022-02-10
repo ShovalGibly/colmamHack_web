@@ -6,7 +6,7 @@ import {
   SplitLogo,
   SizedHeadLine,
 } from '../utils/constants/styledComponentsGlobal.constant';
-import split from '../assets/split.png';
+import split from '../assets/dots.png';
 
 function InfoSection() {
   return (
