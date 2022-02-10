@@ -51,7 +51,7 @@ function RegisterButton() {
     <>
       <FloatingButton
         isOpen={isOpen}
-        backgroundColor='turquoise'
+        backgroundColor='pink'
         onClick={handleOpen}
       >
         הירשם עכשיו

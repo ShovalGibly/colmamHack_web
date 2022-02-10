@@ -35,7 +35,7 @@ function CountDownTimer({date='may 30, 2021 12:00:00'}){
                     <NumberWrapper key={uniqid()}>
                         {isNaN(countDownState[key]) || !showCountDown ?
                             <Loader /> :
-                            <BigHeadLine color='turquoise'>{`${numberToPrint} ${afterNumber}`}</BigHeadLine>
+                            <BigHeadLine color='pink'>{`${numberToPrint} ${afterNumber}`}</BigHeadLine>
                         }
                         <SmallHeadLine margin='0 0 0 2rem'>{key}</SmallHeadLine>
                     </NumberWrapper>

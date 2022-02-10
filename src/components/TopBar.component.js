@@ -50,8 +50,9 @@ const TopBarWrapper = styled(FlexWrapper)`
   position: sticky;
   top: 0;
   left: 0;
+  color: black;
 
-  background-color: ${Colors.darkPurple};
+  background-color: ${Colors.white};
   padding: 5rem 10rem;
   z-index: 2;
   height: 100vh;
@@ -74,6 +75,7 @@ const TopBarWrapper = styled(FlexWrapper)`
 const LogoWrapper = styled.div`
   display: flex;
   position: relative;
+  // color: '#000';
 
   animation-name: ${moveUpAnimation}, ${shrinkLogoAnimation};
   animation-duration: 0.5s;

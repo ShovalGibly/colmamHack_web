@@ -12,23 +12,23 @@ function AwardsSection() {
     <FlexWrapper
       flexDirection='column'
       height='100vh'
-      backgroundColor='darkPurple'
+      backgroundColor='white'
     >
-      <BigHeadLine color='white'> Awards </BigHeadLine>
+      <BigHeadLine color='black'> Awards </BigHeadLine>
       <AwardWrapper height='auto'>
-        <MediumHeadLine>6,000₪</MediumHeadLine>
+        <MediumHeadLine color='blue'>7,000₪</MediumHeadLine>
         <SplitLogo height='10rem' src={split} />
-        <BigHeadLine color='turquoise'> 1 </BigHeadLine>
+        <BigHeadLine color='pink'> 1 </BigHeadLine>
       </AwardWrapper>
       <AwardWrapper height='auto'>
-        <MediumHeadLine>3,000₪</MediumHeadLine>
+        <MediumHeadLine color='blue'>4,000₪</MediumHeadLine>
         <SplitLogo height='10rem' src={split} />
-        <BigHeadLine color='turquoise'> 2 </BigHeadLine>
+        <BigHeadLine color='pink'> 2 </BigHeadLine>
       </AwardWrapper>
       <AwardWrapper height='auto'>
-        <MediumHeadLine>1,000₪</MediumHeadLine>
+        <MediumHeadLine color='blue'>2,000₪</MediumHeadLine>
         <SplitLogo height='10rem' src={split} />
-        <BigHeadLine color='turquoise'> 3 </BigHeadLine>
+        <BigHeadLine color='pink'> 3 </BigHeadLine>
       </AwardWrapper>
     </FlexWrapper>
   );
