@@ -10,10 +10,10 @@ import logoAguda from '../assets/logo-aguda.png';
 
 function SponserSection() {
   return (
-    <FlexWrapper height='70vh' backgroundColor='white' flexDirection='column'>
+    <FlexWrapper height='50vh' backgroundColor='white' flexDirection='column'>
       <Text
         dir='rtl'
-        width='65%'
+        width='60%'
         fontSize='3rem'
         color='black'
         textAlign='center'
@@ -34,7 +34,7 @@ function SponserSection() {
 
 const Logo = styled.img`
   position: relative;
-  height: 30rem;
+  height: 12rem;
 
   @media screen and (max-width: 550px) {
     height: 13rem;

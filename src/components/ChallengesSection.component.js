@@ -9,7 +9,7 @@ import split from '../assets/dots.png';
 function ChallengesSection() {
   return (
     <FlexWrapper
-      height='100vh'
+      height='80vh'
       backgroundColor='#1E1E9A'
       flexDirection='column'
     >
@@ -17,7 +17,7 @@ function ChallengesSection() {
       <FlexWrapper height='15vh' width='70%' justifyContent='flex-start' flexDirectionMobile='column' marginMobile='2rem 0'>
         <FlexWrapper width='auto'>
           <MediumHeadLine color='pink'>PAYMENTS</MediumHeadLine>
-          <SplitLogo height='5rem' src={split} />
+          <SplitLogo height='3rem' src={split} />
         </FlexWrapper>
         <Text margin='0 4rem' textAlign='left' width='auto'>
           Our dependence on the merchant integration limits where shopper’s can use Splitit. How can we enhance this while maintaining a strong user experience? (OTT solution)
@@ -27,7 +27,7 @@ function ChallengesSection() {
       <FlexWrapper height='15vh' width='70%' justifyContent='flex-start' flexDirectionMobile='column' marginMobile='2rem 0'>
         <FlexWrapper width='auto'>
           <MediumHeadLine color='pink'>MOBILE</MediumHeadLine>
-          <SplitLogo height='5rem' src={split} />
+          <SplitLogo height='3rem' src={split} />
         </FlexWrapper>
         <Text margin='0 4rem' textAlign='left' width='auto'>
           Mobile conversion rate is a lot lower than desktop. How can we solve this? 
@@ -36,7 +36,7 @@ function ChallengesSection() {
       <FlexWrapper height='15vh' width='70%' justifyContent='flex-start' flexDirectionMobile='column' marginMobile='2rem 0'>
         <FlexWrapper width='auto'>
           <MediumHeadLine color='pink'>INTEGRATIONS</MediumHeadLine>
-          <SplitLogo height='5rem' src={split} />
+          <SplitLogo height='3rem' src={split} />
         </FlexWrapper>
         <Text margin='0 4rem' textAlign='left' width='auto'>
           As a SaaS company how can we simplify our integrations to shorten the onboarding/integration time and reduce merchant errors? 
@@ -45,7 +45,7 @@ function ChallengesSection() {
       <FlexWrapper height='15vh' width='70%' justifyContent='flex-start' flexDirectionMobile='column' marginMobile='2rem 0'>
         <FlexWrapper width='auto'>
           <MediumHeadLine color='pink'>DATA</MediumHeadLine>
-          <SplitLogo height='5rem' src={split} />
+          <SplitLogo height='3rem' src={split} />
         </FlexWrapper>
         <Text margin='0 4rem' textAlign='left' width='auto'>
           We have data coming in from multiple sources, how can we use it to detect anomalies and abnormal patterns , develop reports and

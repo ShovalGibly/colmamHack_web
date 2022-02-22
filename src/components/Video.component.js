@@ -4,7 +4,7 @@ import { Colors } from '../utils/constants/style.constant';
 
 function Video() {
   return (
-    <FlexWrapper height='100vh'>
+    <FlexWrapper height='80vh'>
       <Overlay></Overlay>
       <VideoFrame
         src='https://www.youtube.com/embed/daAxOiSD78c'

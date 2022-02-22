@@ -119,7 +119,8 @@ const CustomHeadline = styled(MediumHeadLine)`
 const ItemImage = styled.img`
   border-radius: 2rem;
   margin: 1rem 0;
-  height: 30rem;
+  height: 21rem;
+  width: 22rem;
 `;
 
 const SocialLogo = styled.img`

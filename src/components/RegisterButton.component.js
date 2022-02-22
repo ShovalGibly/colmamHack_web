@@ -158,7 +158,7 @@ function RegisterButton() {
             {errors.studyYear && <Error dir='rtl'> אנא בחר שנת לימוד </Error>}
             {errors.studyField && <Error dir='rtl'> אנא בחר סוג תואר </Error>}
             <SelectWrapper justifyContent='flex-end' width='95%'>              
-              <label  dir='rtl' for="participatedInHack" style={{marginRight: '1rem', color: 'white'}}> השתתפתי בעבר בהקאתון </label>
+              <label  dir='rtl' for="participatedInHack" style={{marginRight: '1rem', color: '#black'}}> השתתפתי בעבר בהקאתון </label>
               <input type='checkbox' name='participatedInHack' ref={register()}/>
             </SelectWrapper>
             <TextArea
@@ -168,7 +168,7 @@ function RegisterButton() {
               dir='rtl'
               placeholder='ספר/י על עצמך בכמה מילים'
             />
-            <Text dir='rtl' width='50rem' fontSize='1.3rem'>
+            <Text dir='rtl' width='50rem' fontSize='1.3rem' style={{color:'black'}}>
               על כל סטודנט.ית לבצע הרשמה ! ההרשמה פתוחה לסטודנטים בשנים א', ב', וג' ומסלול אל"צ ד' ה' בהתאמה.
               <b> ** הרשמה אינה מבטיחה השתתפות בהאקתון. אישור השתתפות יישלח לאחר סגירת ההרשמה. </b>
             </Text>

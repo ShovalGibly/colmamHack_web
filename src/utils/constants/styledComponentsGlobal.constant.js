@@ -5,11 +5,11 @@ export const FlexWrapper = styled.div`
   margin: ${({ margin }) => margin ?? '0'};
   position: relative;
   display: flex;
+  width: ${({ width }) => width ?? '100%'};
   justify-content: ${({ justifyContent }) => justifyContent ?? 'center'};
   align-items: ${({ alignItems }) => alignItems ?? 'center'};
   flex-direction: ${({ flexDirection }) => flexDirection ?? 'row'};
   ${({ wrap }) => (wrap ? 'flex-wrap: wrap;' : '')}
-  width: ${({ width }) => width ?? '100%'};
   min-height: ${({ height }) => height ?? '100%'};
   background-color: ${({ backgroundColor }) =>
     Colors[backgroundColor] ?? backgroundColor ?? 'transparent'};
@@ -29,7 +29,8 @@ const Headline = styled.p`
 `;
 
 export const ExtraHeadLine = styled(Headline)`
-  font-size: 26rem;
+font-size: 15rem;
+margin-left: 20%;
 
   @media screen and (max-width: 550px) {
     font-size: 4rem;
@@ -37,7 +38,7 @@ export const ExtraHeadLine = styled(Headline)`
 `;
 
 export const BigHeadLine = styled(Headline)`
-  font-size: 13.7rem;
+  font-size: 8.7rem;
   // color: blue;
   @media screen and (max-width: 550px) {
     font-size: 4rem;
@@ -45,7 +46,7 @@ export const BigHeadLine = styled(Headline)`
 `;
 
 export const MediumHeadLine = styled(Headline)`
-  font-size: 8.5rem;
+  font-size: 3.5rem;
   @media screen and (max-width: 550px) {
     font-size: 4rem;
   }
@@ -114,7 +115,6 @@ export const Loader = styled.div`
 
 export const SplitLogo = styled.img`
   height: ${({ height }) => height ?? '18rem'};
-  margin-left: 5rem;
 
   @media screen and (max-width: 550px) {
     height: 4rem;
@@ -160,11 +160,10 @@ export const PopupWrapper = styled(FlexWrapper)`
 
 export const ClosingButton = styled.div`
   position: fixed;
-  top: 15vh;
-  right: 20vw;
+  top: 5vh;
+  right: 4vw;
   cursor: pointer;
   z-index: 3;
-
   &:hover {
     transform: scale(1.1);
   }

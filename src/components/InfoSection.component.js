@@ -10,7 +10,7 @@ import split from '../assets/dots.png';
 
 function InfoSection() {
   return (
-    <FlexWrapper backgroundColor='darkPurple' height='100vh' id='info'>
+    <FlexWrapper backgroundColor='darkPurple' height='70vh' id='info'>
       <InfoWrapper flexDirection='column' alignItems='flex-end' width='auto'>
         <MediumHeadLine color='pink'>who?</MediumHeadLine>
         <SizedHeadLine dir='rtl' color='black' size={3}>
