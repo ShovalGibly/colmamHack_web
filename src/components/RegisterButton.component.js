@@ -14,7 +14,7 @@ import {
   Error,
   Text,
 } from '../utils/constants/styledComponentsGlobal.constant';
-import closeButton from '../assets/close-button.png';
+import closeButton from '../assets/x.png';
 import { useForm } from 'react-hook-form';
 import { fireStore } from '../../firebase.config';
 
