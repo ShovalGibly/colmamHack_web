@@ -10,7 +10,7 @@ import logoAguda from '../assets/logo-aguda.png';
 
 function SponserSection() {
   return (
-    <FlexWrapper height='50vh' backgroundColor='white' flexDirection='column'>
+    <FlexWrapper height='95vh' backgroundColor='white' flexDirection='column'>
       <Text
         dir='rtl'
         width='60%'
@@ -18,7 +18,16 @@ function SponserSection() {
         color='black'
         textAlign='center'
       >
-הפרסים והתחרות בחסות חברת Netapp בהשתתפות בית הספר למדעי המחשב ואגודת הסטודנטים
+הפרסים והתחרות בחסות חברת Netapp
+      </Text>
+      <Text
+        dir='rtl'
+        width='60%'
+        fontSize='3rem'
+        color='black'
+        textAlign='center'
+      >
+בהשתתפות בית הספר למדעי המחשב ואגודת הסטודנטים
       </Text>
       <FlexWrapper width='63%' height='auto' justifyContent='space-between' wrap>
         <Logo src={logoAguda} style={{height: '8rem'}} />

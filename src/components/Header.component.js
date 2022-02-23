@@ -11,7 +11,7 @@ function Header() {
     <FlexWrapper
       flexDirection='column'
       backgroundColor='white'
-      height='65vh'
+      height='95vh'
     >
       <BigHeadLine>WE START IN </BigHeadLine>
       <CountDownTimer />

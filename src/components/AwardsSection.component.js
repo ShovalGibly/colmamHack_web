@@ -11,7 +11,7 @@ function AwardsSection() {
   return (
     <FlexWrapper
       flexDirection='column'
-      height='80vh'
+      height='100vh'
       backgroundColor='gray'
     >
       <BigHeadLine color='black'> Awards </BigHeadLine>
@@ -35,7 +35,7 @@ function AwardsSection() {
 }
 
 const AwardWrapper = styled(FlexWrapper)`
-  margin: 3rem;
+  margin: 1.5rem;
 `;
 
 export default AwardsSection;

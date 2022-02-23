@@ -9,11 +9,11 @@ import split from '../assets/dots.png';
 function ChallengesSection() {
   return (
     <FlexWrapper
-      height='80vh'
+      height='90vh'
       backgroundColor='#1E1E9A'
       flexDirection='column'
     >
-      <MediumHeadLine color='darkPurple'> THE CHALLENGES</MediumHeadLine>
+      <MediumHeadLine color='darkPurple' margin='2rem 0 3.5rem 0'> THE CHALLENGES</MediumHeadLine>
       <FlexWrapper height='15vh' width='70%' justifyContent='flex-start' flexDirectionMobile='column' marginMobile='2rem 0'>
         <FlexWrapper width='auto'>
           <MediumHeadLine color='pink'>PAYMENTS</MediumHeadLine>

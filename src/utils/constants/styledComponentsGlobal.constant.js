@@ -13,6 +13,7 @@ export const FlexWrapper = styled.div`
   min-height: ${({ height }) => height ?? '100%'};
   background-color: ${({ backgroundColor }) =>
     Colors[backgroundColor] ?? backgroundColor ?? 'transparent'};
+  
 
   @media screen and (max-width: 550px) {
     flex-direction: ${({ flexDirectionMobile, flexDirection }) =>
@@ -30,7 +31,7 @@ const Headline = styled.p`
 
 export const ExtraHeadLine = styled(Headline)`
 font-size: 15rem;
-margin-left: 20%;
+margin-left: 15rem;
 
   @media screen and (max-width: 550px) {
     font-size: 4rem;
@@ -38,7 +39,12 @@ margin-left: 20%;
 `;
 
 export const BigHeadLine = styled(Headline)`
-  font-size: 8.7rem;
+  font-size: 8rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
   // color: blue;
   @media screen and (max-width: 550px) {
     font-size: 4rem;
@@ -46,7 +52,8 @@ export const BigHeadLine = styled(Headline)`
 `;
 
 export const MediumHeadLine = styled(Headline)`
-  font-size: 3.5rem;
+  font-size: 4rem;
+  font-family: 'Heebo, sans-serif';
   @media screen and (max-width: 550px) {
     font-size: 4rem;
   }
@@ -64,6 +71,7 @@ export const SmallHeadLine = styled(Headline)`
 export const SizedHeadLine = styled(Headline)`
   font-size: ${({ size }) => (size ? `${size}rem` : '2rem')};
   margin: 0 0 3rem;
+  font-family: 'Heebo, sans-serif';
 
   @media screen and (max-width: 550px) {
     font-size: ${({ size }) => (size ? `${size / 2}rem` : '1rem')};
@@ -114,7 +122,7 @@ export const Loader = styled.div`
 `;
 
 export const SplitLogo = styled.img`
-  height: ${({ height }) => height ?? '18rem'};
+  height: ${({ height }) => height ?? '8rem'};
 
   @media screen and (max-width: 550px) {
     height: 4rem;

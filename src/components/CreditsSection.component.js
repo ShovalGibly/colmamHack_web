@@ -47,7 +47,7 @@ function CreditItem({
   return (
     <FlexWrapper width='auto' height='auto' flexDirection='column'>
       <ItemImage src={image} />
-      <SmallHeadLine color='blue'> {name} </SmallHeadLine>
+      <SmallHeadLine color='pink'> {name} </SmallHeadLine>
       <FlexWrapper>
         <a href={facebookLink}>
           <SocialLogo src={facebookLogo} />
@@ -62,7 +62,7 @@ function CreditItem({
 
 function CreditsSection() {
   return (
-    <FlexWrapper height='auto' backgroundColor='gray'>
+    <FlexWrapper height='auto' backgroundColor='black'>
       <InnerWrapper flexDirection='column' alignItems='flex-start'>
         <CreditHeadLine text='Organizers' />
         <ItemsWrapper height='auto' justifyContent='flex-end'>
@@ -119,8 +119,8 @@ const CustomHeadline = styled(MediumHeadLine)`
 const ItemImage = styled.img`
   border-radius: 2rem;
   margin: 1rem 0;
-  height: 21rem;
-  width: 22rem;
+  height: 16.5rem;
+  width: 21.5rem;
 `;
 
 const SocialLogo = styled.img`

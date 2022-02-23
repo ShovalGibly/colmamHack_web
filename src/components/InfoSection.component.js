@@ -1,37 +1,37 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 import {
   ExtraHeadLine,
   FlexWrapper,
   MediumHeadLine,
   SplitLogo,
   SizedHeadLine,
-} from '../utils/constants/styledComponentsGlobal.constant';
-import split from '../assets/dots.png';
+} from "../utils/constants/styledComponentsGlobal.constant";
+import split from "../assets/dots.png";
 
 function InfoSection() {
   return (
-    <FlexWrapper backgroundColor='darkPurple' height='70vh' id='info'>
-      <InfoWrapper flexDirection='column' alignItems='flex-end' width='auto'>
-        <MediumHeadLine color='pink'>who?</MediumHeadLine>
-        <SizedHeadLine dir='rtl' color='black' size={3}>
+    <FlexWrapper backgroundColor="darkPurple" height="110vh" id="info">
+      <InfoWrapper flexDirection="column" alignItems="flex-end" width="auto">
+        <MediumHeadLine color="pink"> ? מי</MediumHeadLine>
+        <SizedHeadLine dir="rtl" color="black" size={2.5}>
           צוותים של סטודנטים למדעי המחשב במכללה למנהל המעוניינים ליצור פרויקטים
           ולאתגר את עצמם.
         </SizedHeadLine>
-        <MediumHeadLine color='pink'>when?</MediumHeadLine>
-        <SizedHeadLine dir='rtl' color='black' size={3}>
-          03-04.4.2022 ויום הכנה בX
+        <MediumHeadLine color="pink">? מתי</MediumHeadLine>
+        <SizedHeadLine dir="rtl" color="black" size={2.5}>
+          03-04.4.2022
         </SizedHeadLine>
-        <MediumHeadLine color='pink'>where?</MediumHeadLine>
-        <SizedHeadLine dir='rtl' color='black' size={3}>
-          במכללה בהתאם להנחיות התו הסגול (גם ללא מחוסנים)
+        <MediumHeadLine color="pink">? איפה </MediumHeadLine>
+        <SizedHeadLine dir="rtl" color="black"size={2.5}>
+          במכללה בהתאם להנחיות התו הסגול (גם ללא מחוסנים).
         </SizedHeadLine>
-        <MediumHeadLine color='pink'>what?</MediumHeadLine>
-        <SizedHeadLine dir='rtl' color='black' size={3}>
-          בניית פרויקטים בצוותים בנושא שיפור חוויות הקנייה בדיגיטל.
+        <MediumHeadLine color="pink">? מה</MediumHeadLine>
+        <SizedHeadLine dir="rtl" color="black" size={2.5}>
+         בניית פרויקטים בצוותים בנושא ????.
         </SizedHeadLine>
       </InfoWrapper>
       <SectionHeadLine>
-        <ExtraHeadLine color='blue' >info</ExtraHeadLine>
+        <ExtraHeadLine color="blue">info</ExtraHeadLine>
         <SplitLogo src={split} />
       </SectionHeadLine>
     </FlexWrapper>
@@ -52,6 +52,7 @@ const SectionHeadLine = styled.div`
   display: flex;
   width: auto;
   align-items: center;
+  margin: 7rem 0 0 0;
   transform: rotate(270deg) translateX(-20px);
 
   @media screen and (max-width: 550px) {

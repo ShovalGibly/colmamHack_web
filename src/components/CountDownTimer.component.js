@@ -27,7 +27,7 @@ function CountDownTimer({date='april 03, 2022 12:00:00'}){
     useEffect(() => { timer(); return () => clearInterval(timerInterval);}, []);
 
     return (
-        <FlexWrapper height='wrap-content'>
+        <FlexWrapper height='wrap-content' margim='0 0 0 2rem'>
             {Object.keys(countDownState).map( key => {
                 const numberToPrint = String(countDownState[key]).padStart(2, '0');
                 const afterNumber = key !== 'secounds' ? ':' : ' ';
@@ -46,9 +46,8 @@ function CountDownTimer({date='april 03, 2022 12:00:00'}){
 }
 
 const NumberWrapper = styled.div`
-    margin-left: 3rem;
-    width: 25rem;
-    
+    width: 16rem;
+        
     @media screen and (max-width: 550px) {
         margin-left: 0.5rem;
         width: 8rem;
