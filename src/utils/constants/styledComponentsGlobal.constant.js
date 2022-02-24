@@ -53,7 +53,7 @@ export const BigHeadLine = styled(Headline)`
 
 export const MediumHeadLine = styled(Headline)`
   font-size: 4rem;
-  font-family: 'Heebo, sans-serif';
+  // font-family: 'Heebo, sans-serif';
   @media screen and (max-width: 550px) {
     font-size: 4rem;
   }
@@ -71,7 +71,7 @@ export const SmallHeadLine = styled(Headline)`
 export const SizedHeadLine = styled(Headline)`
   font-size: ${({ size }) => (size ? `${size}rem` : '2rem')};
   margin: 0 0 3rem;
-  font-family: 'Heebo, sans-serif';
+  // font-family: 'Heebo, sans-serif';
 
   @media screen and (max-width: 550px) {
     font-size: ${({ size }) => (size ? `${size / 2}rem` : '1rem')};
