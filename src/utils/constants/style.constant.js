@@ -37,6 +37,6 @@ export const Colors = {
 };
 
 export const Fonts = {
-  main: 'Space Grotesk, sans-serif',
+  main: '',
   secoundery: 'Heebo, sans-serif',
 };
