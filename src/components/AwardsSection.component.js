@@ -35,7 +35,7 @@ function AwardsSection() {
 }
 
 const AwardWrapper = styled(FlexWrapper)`
-  margin: 1.5rem;
+  margin: 0.5rem;
 `;
 
 export default AwardsSection;

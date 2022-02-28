@@ -69,7 +69,7 @@ export const SmallHeadLine = styled(Headline)`
 
 export const SizedHeadLine = styled(Headline)`
   font-size: ${({ size }) => (size ? `${size}rem` : '2rem')};
-  margin: 0 0 3rem;
+  margin: 0 0 0.5rem;
 
   @media screen and (max-width: 550px) {
     font-size: ${({ size }) => (size ? `${size / 2}rem` : '1rem')};
