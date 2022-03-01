@@ -63,7 +63,7 @@ function CreditItem({
 function CreditsSection() {
   return (
     <FlexWrapper height='40vh' backgroundColor='black'>
-      <InnerWrapper flexDirection='column' alignItems='flex-start'>
+      <InnerWrapper flexDirection='column' alignItems='center'>
         <CreditHeadLine text='Organizers' />
         <ItemsWrapper height='40vh' justifyContent='flex-end'>
           {organizers.map(({ linkedInLink, facebookLink, name, image }) => (

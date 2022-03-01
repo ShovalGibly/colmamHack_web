@@ -27,8 +27,7 @@ function InfoSection() {
         </SizedHeadLine>
         <MediumHeadLine color="pink">WHAT?</MediumHeadLine>
         <SizedHeadLine dir="rtl" color="black" size={2.5}>
-         בניית פרויקטים בצוותים בנושא משאבי הענן.
-        </SizedHeadLine>
+        בניית פרויקטים בנושא של אופטימיזציית מחשוב ענן ועבודה בסקיילים גדולים.        </SizedHeadLine>
       </InfoWrapper>
       <SectionHeadLine>
         <ExtraHeadLine color="blue">info</ExtraHeadLine>
