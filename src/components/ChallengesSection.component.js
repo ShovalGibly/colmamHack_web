@@ -20,7 +20,7 @@ function ChallengesSection() {
           <SplitLogo height='3rem' src={split} />
         </FlexWrapper>
         <Text margin='0 4rem' textAlign='left' width='auto'>
-          description
+        Optimize your infrastructure and manage your cloud and resources based on usage.
         </Text>
       </FlexWrapper>
       <FlexWrapper height='15vh' width='70%' justifyContent='flex-start' flexDirectionMobile='column' marginMobile='2rem 0'>
@@ -29,7 +29,7 @@ function ChallengesSection() {
           <SplitLogo height='3rem' src={split} />
         </FlexWrapper>
         <Text margin='0 4rem' textAlign='left' width='auto'>
-          description
+        Create solutions for protecting data and running environments.
         </Text>
       </FlexWrapper>
       <FlexWrapper height='15vh' width='70%' justifyContent='flex-start' flexDirectionMobile='column' marginMobile='2rem 0'>
@@ -38,7 +38,7 @@ function ChallengesSection() {
           <SplitLogo height='3rem' src={split} />
         </FlexWrapper>
         <Text margin='0 4rem' textAlign='left' width='auto'>
-          description
+        Enhance spot automation capabilities and build dev operation tools.
         </Text>
       </FlexWrapper>
     </FlexWrapper>
