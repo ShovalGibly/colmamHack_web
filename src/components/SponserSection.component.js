@@ -10,7 +10,7 @@ import logoAguda from '../assets/logo-aguda.png';
 
 function SponserSection() {
   return (
-    <FlexWrapper height='95vh' backgroundColor='white' flexDirection='column'>
+    <FlexWrapper height='80vh' backgroundColor='white' flexDirection='column'>
       <Text
         dir='rtl'
         width='60%'

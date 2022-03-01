@@ -10,22 +10,22 @@ import split from "../assets/dots.png";
 
 function InfoSection() {
   return (
-    <FlexWrapper backgroundColor="darkPurple" height="110vh" id="info">
+    <FlexWrapper backgroundColor="darkPurple" height="80vh" id="info">
       <InfoWrapper flexDirection="column" alignItems="flex-end" width="auto">
-        <MediumHeadLine color="pink"> ? מי</MediumHeadLine>
+        <MediumHeadLine color="pink"> WHO?</MediumHeadLine>
         <SizedHeadLine dir="rtl" color="black" size={2.5}>
           צוותים של סטודנטים למדעי המחשב במכללה למנהל המעוניינים ליצור פרויקטים
           ולאתגר את עצמם.
         </SizedHeadLine>
-        <MediumHeadLine color="pink">? מתי</MediumHeadLine>
+        <MediumHeadLine color="pink">WHEN?</MediumHeadLine>
         <SizedHeadLine dir="rtl" color="black" size={2.5}>
           03-04.4.2022
         </SizedHeadLine>
-        <MediumHeadLine color="pink">? איפה </MediumHeadLine>
+        <MediumHeadLine color="pink">WHERE? </MediumHeadLine>
         <SizedHeadLine dir="rtl" color="black"size={2.5}>
           במכללה בהתאם להנחיות התו הסגול (גם ללא מחוסנים).
         </SizedHeadLine>
-        <MediumHeadLine color="pink">? מה</MediumHeadLine>
+        <MediumHeadLine color="pink">WHAT?</MediumHeadLine>
         <SizedHeadLine dir="rtl" color="black" size={2.5}>
          בניית פרויקטים בצוותים בנושא משאבי הענן.
         </SizedHeadLine>

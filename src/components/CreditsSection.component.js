@@ -33,7 +33,7 @@ const TBD = [
 function CreditHeadLine({ text }) {
   return (
     <FlexWrapper width='auto' height='auto' margin='0 0 5rem'>
-      <CustomHeadline color='pink'>{text}</CustomHeadline>
+      <CustomHeadline width='auto' height='auto' color='pink'>{text}</CustomHeadline>
     </FlexWrapper>
   );
 }
@@ -62,10 +62,10 @@ function CreditItem({
 
 function CreditsSection() {
   return (
-    <FlexWrapper height='auto' backgroundColor='black'>
+    <FlexWrapper height='40vh' backgroundColor='black'>
       <InnerWrapper flexDirection='column' alignItems='flex-start'>
         <CreditHeadLine text='Organizers' />
-        <ItemsWrapper height='auto' justifyContent='flex-end'>
+        <ItemsWrapper height='40vh' justifyContent='flex-end'>
           {organizers.map(({ linkedInLink, facebookLink, name, image }) => (
             <CreditItem
               linkedInLink={linkedInLink}

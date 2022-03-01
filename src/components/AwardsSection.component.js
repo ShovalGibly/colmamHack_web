@@ -11,7 +11,7 @@ function AwardsSection() {
   return (
     <FlexWrapper
       flexDirection='column'
-      height='100vh'
+      height='80vh'
       backgroundColor='gray'
     >
       <BigHeadLine color='black'> Awards </BigHeadLine>
