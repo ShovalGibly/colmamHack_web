@@ -27,7 +27,8 @@ function InfoSection() {
         </SizedHeadLine>
         <MediumHeadLine color="pink">WHAT?</MediumHeadLine>
         <SizedHeadLine dir="rtl" color="black" size={2.5}>
-        בניית פרויקטים בנושא של אופטימיזציית מחשוב ענן ועבודה בסקיילים גדולים.        </SizedHeadLine>
+        ספוט מזמינה אותכן/ם להשתתף בהאקטון ולהתמודד עם חלק מהאתגרים הגדולים שניצבים היום בעבודה בסביבות ענן, אופטימיזציה של משאבים, סביבות ריצה גדולות וללמוד על הפתרונות המובילים של ספוט.
+       </SizedHeadLine>
       </InfoWrapper>
       <SectionHeadLine>
         <ExtraHeadLine color="blue">info</ExtraHeadLine>
