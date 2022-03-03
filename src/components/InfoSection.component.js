@@ -57,8 +57,9 @@ const SectionHeadLine = styled.div`
   @media screen and (max-width: 550px) {
     position: absolute;
     transform: none;
-    top: 2rem;
-    left: 2rem;
+    bottom: 51rem;
+    right: 30rem;
+}
   }
 `;
 

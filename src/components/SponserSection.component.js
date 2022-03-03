@@ -30,10 +30,12 @@ function SponserSection() {
 בהשתתפות בית הספר למדעי המחשב ואגודת הסטודנטים
       </Text>
       <FlexWrapper width='63%' height='auto' justifyContent='space-between' wrap>
-        <Logo src={logoAguda} style={{height: '8rem'}} />
+        <Logo src={logoAguda}  />
         <Logo src={logoSpotByNetapp} />
-        <LogoColman src={logoColman} />
+        <Logo src={logoColman} />
       </FlexWrapper>
+      <br/>
+      <br/>
       <Text width='63%' color='black' textAlign='justify'>
       NetApp is a proven leader when it comes to modernizing and simplifying your storage environment. From simple, smart, trusted storage for shared NAS and SAN environments to arrays built for dedicated, high-bandwidth applications like data analytics and disk-based backup, we work with you to design the perfect solution.
       </Text>
@@ -46,7 +48,7 @@ const Logo = styled.img`
   height: 12rem;
 
   @media screen and (max-width: 550px) {
-    height: 13rem;
+    height: 5rem;
   }
 `;
 
