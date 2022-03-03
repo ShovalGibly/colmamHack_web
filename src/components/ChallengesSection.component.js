@@ -19,7 +19,7 @@ function ChallengesSection() {
           <MediumHeadLine color='pink'>Cost Optimization</MediumHeadLine>
           <SplitLogo height='3rem' src={split} />
         </FlexWrapper>
-        <Text margin='0 4rem' textAlign='left' width='auto'>
+        <Text fontSize="2.5rem" margin='0 4rem' textAlign='left' width='auto'>
         Optimize your infrastructure and manage your cloud and resources based on usage.
         </Text>
       </FlexWrapper>
@@ -28,7 +28,7 @@ function ChallengesSection() {
           <MediumHeadLine color='pink'>Security and Data</MediumHeadLine>
           <SplitLogo height='3rem' src={split} />
         </FlexWrapper>
-        <Text margin='0 4rem' textAlign='left' width='auto'>
+        <Text fontSize="2.5rem" margin='0 4rem' textAlign='left' width='auto'>
         Create solutions for protecting data and running environments.
         </Text>
       </FlexWrapper>
@@ -37,7 +37,7 @@ function ChallengesSection() {
           <MediumHeadLine color='pink'>Automation and Tools</MediumHeadLine>
           <SplitLogo height='3rem' src={split} />
         </FlexWrapper>
-        <Text margin='0 4rem' textAlign='left' width='auto'>
+        <Text fontSize="2.5rem"  margin='0 4rem' textAlign='left' width='auto'>
         Enhance spot automation capabilities and build dev operation tools.
         </Text>
       </FlexWrapper>
