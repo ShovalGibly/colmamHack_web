@@ -5,7 +5,7 @@ function Video() {
 
   
   return (
-    <FlexWrapper height='80vh'>
+    <FlexWrapper height='60vh'>
       <VideoFrame
         src='https://www.youtube.com/embed/daAxOiSD78c'
         title='YouTube video player'

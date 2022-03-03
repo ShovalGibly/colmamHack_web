@@ -10,7 +10,7 @@ import logoAguda from '../assets/logo-aguda.png';
 
 function SponserSection() {
   return (
-    <FlexWrapper height='80vh' backgroundColor='white' flexDirection='column'>
+    <FlexWrapper height='60vh' backgroundColor='white' flexDirection='column'>
       <Text
         dir='rtl'
         width='60%'
@@ -30,10 +30,12 @@ function SponserSection() {
 בהשתתפות בית הספר למדעי המחשב ואגודת הסטודנטים
       </Text>
       <FlexWrapper width='63%' height='auto' justifyContent='space-between' wrap>
-        <Logo src={logoAguda} style={{height: '8rem'}} />
+        <Logo src={logoAguda}  />
         <Logo src={logoSpotByNetapp} />
-        <LogoColman src={logoColman} />
+        <Logo src={logoColman} />
       </FlexWrapper>
+      <br/>
+      <br/>
       <Text width='63%' color='black' textAlign='justify'>
       Spot By Netapp is Leading the way to application-driven infrastructures Automating and optimizing cloud infrastructure to deliver availability and performance at the lowest possible cost.      </Text>
     </FlexWrapper>
@@ -45,7 +47,7 @@ const Logo = styled.img`
   height: 12rem;
 
   @media screen and (max-width: 550px) {
-    height: 13rem;
+    height: 5rem;
   }
 `;
 

@@ -58,7 +58,7 @@ function RegisterButton() {
       </FloatingButton>
       <PopupWrapper isOpen={isOpen}>
         <ClosingButton onClick={handleClose}>
-          <img src={closeButton} />
+          <img src={closeButton} width="50px" height="50px" />
         </ClosingButton>
         <Popup>
           <Form onSubmit={handleSubmit(onSubmit)}>

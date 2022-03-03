@@ -25,9 +25,9 @@ function Table() {
     if(dataToDisplay < 1) return <FlexWrapper height='100vh' flexDirection='column' backgroundColor='darkPurple'> wait </FlexWrapper>
 
     return(
-        <FlexWrapper height='100vh' flexDirection='column' backgroundColor='darkPurple'>
+        <FlexWrapper flexDirection='column' backgroundColor='darkPurple'>
                 <Text>{dataToDisplay.length} מספר רשומים </Text>
-                <div style={{width: '100%', height: '90%', display: 'flex', justifyContent: 'center', margin: '0 0 10rem', overflowY: 'auto'}}>
+                <div style={{display: 'flex', justifyContent: 'center', margin: '0 0 10rem', overflowY: 'auto'}}>
                     <StripedDataTableWrapper>
                         <TableHead>
                             <tr>
@@ -66,7 +66,7 @@ const tempObject = {
 }
 
 export const StripedDataTableWrapper = styled.table`
-    width: 80%;
+
     overflow-y: auto;
     border-spacing: 0;
     text-align: center;

@@ -19,6 +19,7 @@ export const FlexWrapper = styled.div`
     flex-direction: ${({ flexDirectionMobile, flexDirection }) =>
       flexDirectionMobile ?? flexDirection ?? 'row'};
     margin: ${({ marginMobile, margin }) => marginMobile ?? margin ?? '0'};
+    margin-right: 46%;
   }
 `;
 
@@ -88,7 +89,7 @@ export const Space = styled.div`
 export const Text = styled.p`
   margin: ${({ margin }) => margin ?? '0 0 1rem'};
   text-align: ${({ textAlign }) => textAlign ?? 'right'};
-  font-size: ${({ fontSize }) => fontSize ?? '1.6rem'};
+  font-size: ${({ fontSize }) => fontSize ?? '2.2rem'};
   color: ${({ color }) => Colors[color] ?? color ?? Colors.white};
   width: ${({ width }) => width ?? '62rem'};
 
@@ -130,7 +131,7 @@ export const SplitLogo = styled.img`
 
 export const Link = styled.a`
   font-size: 1.6rem;
-  color: ${Colors.black};
+  color: black;
   text-decoration: none;
 
   &:hover {
@@ -207,7 +208,7 @@ export const Error = styled.p`
 
 export const TextInput = styled.input`
   padding: 1rem;
-  color: ${Colors.darkPurple};
+  color: black;
   font-size: 1.6rem;
   font-family: inherit;
   border-radius: 10px;
@@ -225,7 +226,7 @@ export const TextInput = styled.input`
 
 export const SelectBox = styled.select`
   padding: 1rem;
-  color: ${Colors.darkPurple};
+  color: black;
   font-size: 1.6rem;
   font-family: inherit;
   border-radius: 10px;
@@ -242,7 +243,7 @@ export const SelectBox = styled.select`
 
 export const TextArea = styled.textarea`
   padding: 1rem;
-  color: ${Colors.darkPurple};
+  color: black;
   font-size: 1.6rem;
   font-family: inherit;
   border-radius: 10px;

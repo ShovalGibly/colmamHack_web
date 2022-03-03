@@ -10,7 +10,7 @@ import split from "../assets/dots.png";
 
 function InfoSection() {
   return (
-    <FlexWrapper backgroundColor="darkPurple" height="80vh" id="info">
+    <FlexWrapper backgroundColor="darkPurple" height="60vh" id="info">
       <InfoWrapper flexDirection="column" alignItems="flex-end" width="auto">
         <MediumHeadLine color="pink"> WHO?</MediumHeadLine>
         <SizedHeadLine dir="rtl" color="black" size={2.5}>
@@ -58,8 +58,9 @@ const SectionHeadLine = styled.div`
   @media screen and (max-width: 550px) {
     position: absolute;
     transform: none;
-    top: 2rem;
-    left: 2rem;
+    bottom: 51rem;
+    right: 30rem;
+}
   }
 `;
 
