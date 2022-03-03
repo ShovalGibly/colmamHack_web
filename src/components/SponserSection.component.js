@@ -18,7 +18,7 @@ function SponserSection() {
         textAlign='center'
         mediaFontSize= '2.7rem'
       >
-הפרסים והתחרות בחסות חברת Spot by Netapp
+הפרסים והתחרות בחסות חברת Netapp
       </Text>
       <Text
         dir='rtl'
@@ -35,16 +35,9 @@ function SponserSection() {
         <Logo src={logoColman} />
         <Logo src={logoSpotByNetapp} />
       </FlexWrapper>
-<<<<<<< HEAD
-      <br/>
-      <br/>
-      <Text width='63%' color='black' textAlign='justify'>
-      Spot By Netapp is Leading the way to application-driven infrastructures Automating and optimizing cloud infrastructure to deliver availability and performance at the lowest possible cost.      </Text>
-=======
       <Text fontSize='2.2rem' mediaMargin='2rem 0 0 0' mediaFontSize='1rem' color='black' textAlign='center'>
       NetApp is a proven leader when it comes to modernizing and simplifying your storage environment. From simple, smart, trusted storage for shared NAS and SAN environments to arrays built for dedicated, high-bandwidth applications like data analytics and disk-based backup, we work with you to design the perfect solution.
       </Text>
->>>>>>> 2979b8a2eedbde37b827ea56417a9f8c1ce0535e
     </FlexWrapper>
   );
 }

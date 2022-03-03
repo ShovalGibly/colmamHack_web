@@ -25,16 +25,9 @@ function InfoSection() {
         <SizedHeadLine dir="rtl" color="black"size={2.3}>
           במכללה בהתאם להנחיות התו הסגול (גם ללא מחוסנים).
         </SizedHeadLine>
-<<<<<<< HEAD
-        <MediumHeadLine color="pink">WHAT?</MediumHeadLine>
-        <SizedHeadLine dir="rtl" color="black" size={2.5}>
-        ספוט מזמינה אותכן/ם להשתתף בהאקטון ולהתמודד עם חלק מהאתגרים הגדולים שניצבים היום בעבודה בסביבות ענן, אופטימיזציה של משאבים, סביבות ריצה גדולות וללמוד על הפתרונות המובילים של ספוט.
-       </SizedHeadLine>
-=======
         <MediumHeadLine mediaFontSize='2.8rem' color="pink">WHAT?</MediumHeadLine>
         <SizedHeadLine dir="rtl" color="black" size={2.3}>
         בניית פרויקטים בנושא של אופטימיזציית מחשוב ענן ועבודה בסקיילים גדולים.        </SizedHeadLine>
->>>>>>> 2979b8a2eedbde37b827ea56417a9f8c1ce0535e
       </InfoWrapper>
       <SectionHeadLine>
         <ExtraHeadLine color="blue">info</ExtraHeadLine>
