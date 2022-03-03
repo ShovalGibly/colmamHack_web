@@ -32,7 +32,7 @@ const TBD = [
 
 function CreditHeadLine({ text }) {
   return (
-    <FlexWrapper width='auto' height='auto' margin='0 0 5rem'>
+    <FlexWrapper width='auto' height='auto' margin='3rem 0 1rem'>
       <CustomHeadline width='auto' height='auto' color='pink'>{text}</CustomHeadline>
     </FlexWrapper>
   );
@@ -45,7 +45,7 @@ function CreditItem({
   image = 'https://image.shutterstock.com/image-illustration/male-default-avatar-profile-gray-260nw-582509287.jpg',
 }) {
   return (
-    <FlexWrapper width='auto' height='auto' flexDirection='column'>
+    <FlexWrapper width='auto' height='auto' flexDirection='column' padding='3.5rem 0 2rem 0'>      
       <ItemImage src={image} />
       <SmallHeadLine color='pink'> {name} </SmallHeadLine>
       <FlexWrapper>
@@ -104,12 +104,15 @@ function CreditsSection() {
 
 const InnerWrapper = styled(FlexWrapper)`
   width: 80vw;
-  margin: 5rem;
+  @media screen and (max-width: 550px) {
+    margin: auto 30%;  
+  }
 `;
 
 const ItemsWrapper = styled(FlexWrapper)`
   flex-wrap: wrap;
   gap: 4rem;
+ 
 `;
 
 const CustomHeadline = styled(MediumHeadLine)`

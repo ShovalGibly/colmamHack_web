@@ -11,24 +11,25 @@ function AwardsSection() {
   return (
     <FlexWrapper
       flexDirection='column'
-      height='60vh'
+      height='80vh'
       backgroundColor='gray'
+      padding='3.5rem 0 2rem 0'
     >
-      <BigHeadLine color='black'> Awards </BigHeadLine>
+      <BigHeadLine mediaFontSize='7rem' color='black'> Awards </BigHeadLine>
       <AwardWrapper height='auto'>
-        <MediumHeadLine color='blue'>7,000₪</MediumHeadLine>
+        <MediumHeadLine color='blue' mediaFontSize='4rem' >7,000₪</MediumHeadLine>
         <SplitLogo height='4rem' src={split} />
-        <BigHeadLine color='pink'> 1 </BigHeadLine>
+        <BigHeadLine mediaFontSize='6rem' color='pink'> 1 </BigHeadLine>
       </AwardWrapper>
       <AwardWrapper height='auto'>
-        <MediumHeadLine color='blue'>4,000₪</MediumHeadLine>
+        <MediumHeadLine color='blue' mediaFontSize='4rem' >4,000₪</MediumHeadLine>
         <SplitLogo height='4rem' src={split} />
-        <BigHeadLine color='pink'> 2 </BigHeadLine>
+        <BigHeadLine mediaFontSize='6rem' color='pink'> 2 </BigHeadLine>
       </AwardWrapper>
       <AwardWrapper height='auto'>
-        <MediumHeadLine color='blue'>2,000₪</MediumHeadLine>
+        <MediumHeadLine mediaFontSize='4rem' color='blue'>2,000₪</MediumHeadLine>
         <SplitLogo height='4rem' src={split} />
-        <BigHeadLine color='pink'> 3 </BigHeadLine>
+        <BigHeadLine mediaFontSize='6rem' color='pink'> 3 </BigHeadLine>
       </AwardWrapper>
     </FlexWrapper>
   );

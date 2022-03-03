@@ -3,6 +3,7 @@ import { Colors, Fonts } from './style.constant';
 
 export const FlexWrapper = styled.div`
   margin: ${({ margin }) => margin ?? '0'};
+  padding: ${({padding}) => padding?? '0' };
   position: relative;
   display: flex;
   width: ${({ width }) => width ?? '100%'};
@@ -16,11 +17,9 @@ export const FlexWrapper = styled.div`
   
 
   @media screen and (max-width: 550px) {
-    flex-direction: ${({ flexDirectionMobile, flexDirection }) =>
-      flexDirectionMobile ?? flexDirection ?? 'row'};
+    flex-direction: '${({ flexDirectionMobile, flexDirection }) =>
+      flexDirectionMobile ?? flexDirection ?? 'row'}';
     margin: ${({ marginMobile, margin }) => marginMobile ?? margin ?? '0'};
-    margin-right: 46%;
-  }
 `;
 
 const Headline = styled.p`
@@ -32,10 +31,11 @@ const Headline = styled.p`
 
 export const ExtraHeadLine = styled(Headline)`
 font-size: 15rem;
-margin-left: 15rem;
+margin-left: 17rem;
 
   @media screen and (max-width: 550px) {
     font-size: 4rem;
+    
   }
 `;
 
@@ -46,16 +46,15 @@ export const BigHeadLine = styled(Headline)`
   text-align: center;
   align-items: center;
 
-  // color: blue;
   @media screen and (max-width: 550px) {
-    font-size: 4rem;
+    font-size: ${({ mediaFontSize }) => mediaFontSize ?? '4.5rem'};
   }
 `;
 
 export const MediumHeadLine = styled(Headline)`
-  font-size: 4rem;
+  font-size: 3.5rem;
   @media screen and (max-width: 550px) {
-    font-size: 4rem;
+    font-size: ${({ mediaFontSize }) => mediaFontSize ?? '0.5rem'};
   }
 `;
 
@@ -70,11 +69,11 @@ export const SmallHeadLine = styled(Headline)`
 
 export const SizedHeadLine = styled(Headline)`
   font-size: ${({ size }) => (size ? `${size}rem` : '2rem')};
-  margin: 0 0 0.5rem;
+  margin: 0 0 3rem 0;
 
   @media screen and (max-width: 550px) {
-    font-size: ${({ size }) => (size ? `${size / 2}rem` : '1rem')};
-    margin: 1rem 0 3rem ${({ size }) => (size ? `${size / 4}rem` : '0.5rem')};
+    font-size: ${({ size }) => (size ? `${size / 1.3}rem` : '1rem')};
+    margin: 0 0 3rem 0.625rem;)};
   }
 `;
 
@@ -87,14 +86,15 @@ export const Space = styled.div`
 `;
 
 export const Text = styled.p`
-  margin: ${({ margin }) => margin ?? '0 0 1rem'};
+  margin: ${({ margin }) => margin ?? '0 0 0.5rem'};
   text-align: ${({ textAlign }) => textAlign ?? 'right'};
   font-size: ${({ fontSize }) => fontSize ?? '2.2rem'};
   color: ${({ color }) => Colors[color] ?? color ?? Colors.white};
-  width: ${({ width }) => width ?? '62rem'};
+  width: ${({ width }) => width ?? '70rem'};
 
   @media screen and (max-width: 550px) {
-    font-size: 1rem;
+    font-size: ${({ mediaFontSize }) => mediaFontSize ?? '2rem'};
+    margin: ${({ mediaMargin }) => mediaMargin ?? '0'};
     width: 30rem;
   }
 `;
@@ -130,7 +130,7 @@ export const SplitLogo = styled.img`
 `;
 
 export const Link = styled.a`
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: black;
   text-decoration: none;
 
@@ -176,9 +176,8 @@ export const ClosingButton = styled.div`
   }
 
   @media screen and (max-width: 550px) {
-    top: unset;
-    bottom: 2rem;
-    right: 3rem;
+    top: 2rem;
+    right: 2rem;
   }
 `;
 

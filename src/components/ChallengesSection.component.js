@@ -9,7 +9,7 @@ import split from '../assets/dots.png';
 function ChallengesSection() {
   return (
     <FlexWrapper
-      height='60vh'
+      height='80vh'
       backgroundColor='#1E1E9A'
       flexDirection='column'
     >
@@ -44,5 +44,6 @@ function ChallengesSection() {
     </FlexWrapper>
   );
 }
+
 
 export default ChallengesSection;
