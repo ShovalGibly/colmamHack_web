@@ -168,7 +168,7 @@ function RegisterButton() {
               dir='rtl'
               placeholder='ספר/י על עצמך בכמה מילים'
             />
-            <Text dir='rtl' width='50rem' fontSize='1.3rem' style={{color:'black'}}>
+            <Text mediaFontSize='1.6rem' dir='rtl' width='50rem' fontSize='1.3rem' style={{color:'black'}}>
               על כל סטודנט.ית לבצע הרשמה ! ההרשמה פתוחה לסטודנטים בשנים א', ב', וג' ומסלול אל"צ ד' ה' בהתאמה.
               <b> ** הרשמה אינה מבטיחה השתתפות בהאקתון. אישור השתתפות יישלח לאחר סגירת ההרשמה. </b>
             </Text>

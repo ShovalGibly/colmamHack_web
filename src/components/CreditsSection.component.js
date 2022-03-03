@@ -45,7 +45,7 @@ function CreditItem({
   image = 'https://image.shutterstock.com/image-illustration/male-default-avatar-profile-gray-260nw-582509287.jpg',
 }) {
   return (
-    <FlexWrapper width='auto' height='auto' flexDirection='column'>
+    <FlexWrapper width='auto' height='auto' flexDirection='column' padding='3.5rem 0 2rem 0'>      
       <ItemImage src={image} />
       <SmallHeadLine color='pink'> {name} </SmallHeadLine>
       <FlexWrapper>

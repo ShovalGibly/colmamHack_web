@@ -65,9 +65,8 @@ const TopBarWrapper = styled(FlexWrapper)`
   animation-fill-mode: forwards;
 
   @media screen and (max-width: 550px) {
-    padding: 2rem;
+    padding: 1rem;
     animation-fill-mode: none;
-    height: 10vh;
     display: none;
   }
 `;

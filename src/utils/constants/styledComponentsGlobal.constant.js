@@ -3,6 +3,7 @@ import { Colors, Fonts } from './style.constant';
 
 export const FlexWrapper = styled.div`
   margin: ${({ margin }) => margin ?? '0'};
+  padding: ${({padding}) => padding?? '0' };
   position: relative;
   display: flex;
   width: ${({ width }) => width ?? '100%'};
@@ -16,8 +17,8 @@ export const FlexWrapper = styled.div`
   
 
   @media screen and (max-width: 550px) {
-    flex-direction: ${({ flexDirectionMobile, flexDirection }) =>
-      flexDirectionMobile ?? flexDirection ?? 'row'};
+    flex-direction: '${({ flexDirectionMobile, flexDirection }) =>
+      flexDirectionMobile ?? flexDirection ?? 'row'}';
     margin: ${({ marginMobile, margin }) => marginMobile ?? margin ?? '0'};
   }
 `;
@@ -45,16 +46,15 @@ export const BigHeadLine = styled(Headline)`
   text-align: center;
   align-items: center;
 
-  // color: blue;
   @media screen and (max-width: 550px) {
-    font-size: 4rem;
+    font-size: ${({ mediaFontSize }) => mediaFontSize ?? '4rem'};
   }
 `;
 
 export const MediumHeadLine = styled(Headline)`
-  font-size: 4rem;
+  font-size: 3rem;
   @media screen and (max-width: 550px) {
-    font-size: 4rem;
+    font-size: ${({ mediaFontSize }) => mediaFontSize ?? '2rem'};
   }
 `;
 
@@ -72,7 +72,7 @@ export const SizedHeadLine = styled(Headline)`
   margin: 0 0 0.5rem;
 
   @media screen and (max-width: 550px) {
-    font-size: ${({ size }) => (size ? `${size / 2}rem` : '1rem')};
+    font-size: ${({ size }) => (size ? `${size / 1.3}rem` : '1rem')};
     margin: 1rem 0 3rem ${({ size }) => (size ? `${size / 4}rem` : '0.5rem')};
   }
 `;
@@ -86,14 +86,15 @@ export const Space = styled.div`
 `;
 
 export const Text = styled.p`
-  margin: ${({ margin }) => margin ?? '0 0 1rem'};
+  margin: ${({ margin }) => margin ?? '0 0 0.5rem'};
   text-align: ${({ textAlign }) => textAlign ?? 'right'};
   font-size: ${({ fontSize }) => fontSize ?? '2.2rem'};
   color: ${({ color }) => Colors[color] ?? color ?? Colors.white};
-  width: ${({ width }) => width ?? '62rem'};
+  width: ${({ width }) => width ?? '70rem'};
 
   @media screen and (max-width: 550px) {
-    font-size: 1rem;
+    font-size: ${({ mediaFontSize }) => mediaFontSize ?? '2rem'};
+
     width: 30rem;
   }
 `;
@@ -129,7 +130,7 @@ export const SplitLogo = styled.img`
 `;
 
 export const Link = styled.a`
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: black;
   text-decoration: none;
 
