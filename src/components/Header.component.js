@@ -17,7 +17,7 @@ function Header() {
       <BigHeadLine>WE START IN </BigHeadLine>
       <CountDownTimer />
       <Space />
-      <Text dir='rtl' textAlign='center' color='black' fontSize='1.8rem'>
+      <Text   dir='rtl' textAlign='center' color='black' fontSize='2rem'>
       הפקולטה למדעי המחשב במסלול האקדמי המכללה למנהל בשיתוף חברת Spot By Netapp שמחים להזמין אתכם.ן להשתתף בהאקתון מאתגר ומרתק בן 26 שעות במהלכו תיקחו חלק פעיל בצוותים למציאת פתרונות לחברה והכרת תחום הניהול אחסון ומאגרי נתונים.      </Text>
     </FlexWrapper>
   );

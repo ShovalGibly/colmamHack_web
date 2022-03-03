@@ -47,14 +47,14 @@ export const BigHeadLine = styled(Headline)`
   align-items: center;
 
   @media screen and (max-width: 550px) {
-    font-size: ${({ mediaFontSize }) => mediaFontSize ?? '4rem'};
+    font-size: ${({ mediaFontSize }) => mediaFontSize ?? '4.5rem'};
   }
 `;
 
 export const MediumHeadLine = styled(Headline)`
   font-size: 3.5rem;
   @media screen and (max-width: 550px) {
-    font-size: ${({ mediaFontSize }) => mediaFontSize ?? '2rem'};
+    font-size: ${({ mediaFontSize }) => mediaFontSize ?? '0.5rem'};
   }
 `;
 

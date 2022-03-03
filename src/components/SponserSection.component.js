@@ -35,7 +35,7 @@ function SponserSection() {
         <Logo src={logoColman} />
         <Logo src={logoSpotByNetapp} />
       </FlexWrapper>
-      <Text fontSize='1.8rem' mediaMargin='2rem 0 0 0' mediaFontSize='1rem' color='black' textAlign='center'>
+      <Text fontSize='2.2rem' mediaMargin='2rem 0 0 0' mediaFontSize='1rem' color='black' textAlign='center'>
       NetApp is a proven leader when it comes to modernizing and simplifying your storage environment. From simple, smart, trusted storage for shared NAS and SAN environments to arrays built for dedicated, high-bandwidth applications like data analytics and disk-based backup, we work with you to design the perfect solution.
       </Text>
     </FlexWrapper>
