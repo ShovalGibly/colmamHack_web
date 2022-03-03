@@ -11,7 +11,7 @@ function AwardsSection() {
   return (
     <FlexWrapper
       flexDirection='column'
-      height='70vh'
+      height='80vh'
       backgroundColor='gray'
       padding='3.5rem 0 2rem 0'
     >

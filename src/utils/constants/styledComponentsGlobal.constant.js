@@ -20,7 +20,6 @@ export const FlexWrapper = styled.div`
     flex-direction: '${({ flexDirectionMobile, flexDirection }) =>
       flexDirectionMobile ?? flexDirection ?? 'row'}';
     margin: ${({ marginMobile, margin }) => marginMobile ?? margin ?? '0'};
-  }
 `;
 
 const Headline = styled.p`
@@ -32,10 +31,11 @@ const Headline = styled.p`
 
 export const ExtraHeadLine = styled(Headline)`
 font-size: 15rem;
-margin-left: 15rem;
+margin-left: 17rem;
 
   @media screen and (max-width: 550px) {
     font-size: 4rem;
+    
   }
 `;
 
@@ -52,7 +52,7 @@ export const BigHeadLine = styled(Headline)`
 `;
 
 export const MediumHeadLine = styled(Headline)`
-  font-size: 3rem;
+  font-size: 3.5rem;
   @media screen and (max-width: 550px) {
     font-size: ${({ mediaFontSize }) => mediaFontSize ?? '2rem'};
   }
@@ -69,11 +69,11 @@ export const SmallHeadLine = styled(Headline)`
 
 export const SizedHeadLine = styled(Headline)`
   font-size: ${({ size }) => (size ? `${size}rem` : '2rem')};
-  margin: 0 0 0.5rem;
+  margin: 0 0 3rem 0;
 
   @media screen and (max-width: 550px) {
     font-size: ${({ size }) => (size ? `${size / 1.3}rem` : '1rem')};
-    margin: 1rem 0 3rem ${({ size }) => (size ? `${size / 4}rem` : '0.5rem')};
+    margin: 0 0 3rem 0.625rem;)};
   }
 `;
 
@@ -94,7 +94,7 @@ export const Text = styled.p`
 
   @media screen and (max-width: 550px) {
     font-size: ${({ mediaFontSize }) => mediaFontSize ?? '2rem'};
-
+    margin: ${({ mediaMargin }) => mediaMargin ?? '0'};
     width: 30rem;
   }
 `;
@@ -176,9 +176,8 @@ export const ClosingButton = styled.div`
   }
 
   @media screen and (max-width: 550px) {
-    top: unset;
-    bottom: 2rem;
-    right: 3rem;
+    top: 2rem;
+    right: 2rem;
   }
 `;
 

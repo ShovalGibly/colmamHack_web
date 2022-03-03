@@ -11,7 +11,7 @@ function Header() {
     <FlexWrapper
       flexDirection='column'
       backgroundColor='white'
-      height='70vh'
+      height='80vh'
       padding='3.5rem 0 2rem 0'
     >
       <BigHeadLine>WE START IN </BigHeadLine>
