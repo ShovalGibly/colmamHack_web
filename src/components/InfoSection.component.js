@@ -10,23 +10,23 @@ import split from "../assets/dots.png";
 
 function InfoSection() {
   return (
-    <FlexWrapper backgroundColor="darkPurple" height="60vh" id="info">
+    <FlexWrapper backgroundColor="darkPurple" height="80vh" id="info" padding='3.5rem 0 2rem 0'>
       <InfoWrapper flexDirection="column" alignItems="flex-end" width="auto">
-        <MediumHeadLine color="pink"> WHO?</MediumHeadLine>
-        <SizedHeadLine dir="rtl" color="black" size={2.5}>
+        <MediumHeadLine mediaFontSize='2.8rem' color="pink"> WHO?</MediumHeadLine>
+        <SizedHeadLine dir="rtl" color="black" size={2.3}>
           צוותים של סטודנטים למדעי המחשב במכללה למנהל המעוניינים ליצור פרויקטים
           ולאתגר את עצמם.
         </SizedHeadLine>
-        <MediumHeadLine color="pink">WHEN?</MediumHeadLine>
-        <SizedHeadLine dir="rtl" color="black" size={2.5}>
+        <MediumHeadLine mediaFontSize='2.8rem' color="pink">WHEN?</MediumHeadLine>
+        <SizedHeadLine dir="rtl" color="black" size={2.3}>
           03-04.4.2022
         </SizedHeadLine>
-        <MediumHeadLine color="pink">WHERE? </MediumHeadLine>
-        <SizedHeadLine dir="rtl" color="black"size={2.5}>
+        <MediumHeadLine mediaFontSize='2.8rem' color="pink">WHERE? </MediumHeadLine>
+        <SizedHeadLine dir="rtl" color="black"size={2.3}>
           במכללה בהתאם להנחיות התו הסגול (גם ללא מחוסנים).
         </SizedHeadLine>
-        <MediumHeadLine color="pink">WHAT?</MediumHeadLine>
-        <SizedHeadLine dir="rtl" color="black" size={2.5}>
+        <MediumHeadLine mediaFontSize='2.8rem' color="pink">WHAT?</MediumHeadLine>
+        <SizedHeadLine dir="rtl" color="black" size={2.3}>
         בניית פרויקטים בנושא של אופטימיזציית מחשוב ענן ועבודה בסקיילים גדולים.        </SizedHeadLine>
       </InfoWrapper>
       <SectionHeadLine>
@@ -40,10 +40,14 @@ function InfoSection() {
 const InfoWrapper = styled(FlexWrapper)`
   position: relative;
   left: 20rem;
+  padding: 1rem 0;
 
   @media screen and (max-width: 550px) {
     left: 0;
     padding: 0 1.5rem;
+    position: absolute;
+    top:0
+
   }
 `;
 
@@ -55,11 +59,10 @@ const SectionHeadLine = styled.div`
   transform: rotate(270deg) translateX(-20px);
 
   @media screen and (max-width: 550px) {
-    position: absolute;
     transform: none;
-    bottom: 51rem;
-    right: 30rem;
-}
+    position: absolute;
+    top: 0;
+    left: 3rem;
   }
 `;
 
