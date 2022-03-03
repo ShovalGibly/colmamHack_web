@@ -20,7 +20,7 @@ export const FlexWrapper = styled.div`
     flex-direction: '${({ flexDirectionMobile, flexDirection }) =>
       flexDirectionMobile ?? flexDirection ?? 'row'}';
     margin: ${({ marginMobile, margin }) => marginMobile ?? margin ?? '0'};
-`;
+  `;
 
 const Headline = styled.p`
   font-family: ${Fonts.main};
@@ -47,14 +47,14 @@ export const BigHeadLine = styled(Headline)`
   align-items: center;
 
   @media screen and (max-width: 550px) {
-    font-size: ${({ mediaFontSize }) => mediaFontSize ?? '4.5rem'};
+    font-size: ${({ mediaFontSize }) => mediaFontSize ?? '4rem'};
   }
 `;
 
 export const MediumHeadLine = styled(Headline)`
   font-size: 3.5rem;
   @media screen and (max-width: 550px) {
-    font-size: ${({ mediaFontSize }) => mediaFontSize ?? '0.5rem'};
+    font-size: ${({ mediaFontSize }) => mediaFontSize ?? '2rem'};
   }
 `;
 
