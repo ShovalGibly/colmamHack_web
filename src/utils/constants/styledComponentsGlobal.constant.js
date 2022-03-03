@@ -176,8 +176,8 @@ export const ClosingButton = styled.div`
   }
 
   @media screen and (max-width: 550px) {
-    top: 2rem;
-    right: 2rem;
+    top: 0rem;
+    right: 0.5rem;
   }
 `;
 
