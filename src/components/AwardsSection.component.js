@@ -29,7 +29,7 @@ function AwardsSection() {
       <AwardWrapper height='auto'>
         <MediumHeadLine mediaFontSize='4rem' color='blue'>2,000₪</MediumHeadLine>
         <SplitLogo height='4rem' src={split} />
-        <BigHeadLine color='pink'> 3 </BigHeadLine>
+        <BigHeadLine mediaFontSize='6rem' color='pink'> 3 </BigHeadLine>
       </AwardWrapper>
     </FlexWrapper>
   );

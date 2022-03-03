@@ -20,7 +20,7 @@ export const FlexWrapper = styled.div`
     flex-direction: '${({ flexDirectionMobile, flexDirection }) =>
       flexDirectionMobile ?? flexDirection ?? 'row'}';
     margin: ${({ marginMobile, margin }) => marginMobile ?? margin ?? '0'};
-`;
+  `;
 
 const Headline = styled.p`
   font-family: ${Fonts.main};
