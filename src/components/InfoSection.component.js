@@ -10,14 +10,14 @@ import split from "../assets/dots.png";
 
 function InfoSection() {
   return (
-    <FlexWrapper backgroundColor="darkPurple" height="60vh" id="info" padding='3.5rem 0 2rem 0'>
+    <FlexWrapper backgroundColor="darkPurple" height="70vh" id="info" padding='3.5rem 0 2rem 0'>
       <InfoWrapper flexDirection="column" alignItems="flex-end" width="auto">
         <MediumHeadLine color="pink"> WHO?</MediumHeadLine>
         <SizedHeadLine dir="rtl" color="black" size={2.5}>
           צוותים של סטודנטים למדעי המחשב במכללה למנהל המעוניינים ליצור פרויקטים
           ולאתגר את עצמם.
         </SizedHeadLine>
-        <MediumHeadLine color="pink">WHEN?</MediumHeadLine>
+        <MediumHeadLine mediaFontSize='2.2rem' color="pink">WHEN?</MediumHeadLine>
         <SizedHeadLine dir="rtl" color="black" size={2.5}>
           03-04.4.2022
         </SizedHeadLine>
