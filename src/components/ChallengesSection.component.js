@@ -12,32 +12,37 @@ function ChallengesSection() {
       height='80vh'
       backgroundColor='#1E1E9A'
       flexDirection='column'
+      width='100%'
+      alignItems="center"
+      justifyContent="center"
+      padding="5rem 15rem"
+      paddingMobile='2rem'
     >
-      <MediumHeadLine color='darkPurple' margin='2rem 0 3.5rem 0'> THE CHALLENGES</MediumHeadLine>
-      <FlexWrapper height='15vh' width='70%' justifyContent='flex-start' flexDirectionMobile='column' marginMobile='2rem 0'>
-        <FlexWrapper width='auto'>
-          <MediumHeadLine color='pink'>Cost Optimization</MediumHeadLine>
+      <MediumHeadLine mediaFontSize="3rem" color='darkPurple' margin='2rem 0 3.5rem 0'> THE CHALLENGES</MediumHeadLine>
+      <FlexWrapper flexDirection='column' height='15vh' marginMobile='2rem 0' justifyContent='flex-start' margin="3rem">
+        <FlexWrapper justifyContent='flex-start'flexDirectionMobile='column'>
+          <MediumHeadLine mediaFontSize="2.5rem" width='90%' color='pink'>Cost Optimization</MediumHeadLine>
           <SplitLogo height='3rem' src={split} />
         </FlexWrapper>
-        <Text fontSize="2.5rem" margin='0 4rem' textAlign='left' width='auto'>
+        <Text mediaFontSize="2.3rem" mobilewidth='100%' fontSize="2.5rem" margin='0 4rem' textAlign='start' width='100%'>
         Optimize your infrastructure and manage your cloud and resources based on usage.
         </Text>
       </FlexWrapper>
-      <FlexWrapper height='15vh' width='70%' justifyContent='flex-start' flexDirectionMobile='column' marginMobile='2rem 0'>
-        <FlexWrapper width='auto'>
-          <MediumHeadLine color='pink'>Security and Data</MediumHeadLine>
+      <FlexWrapper flexDirection='column' height='15vh' marginMobile='2rem 0' justifyContent='flex-start' margin="3rem">
+        <FlexWrapper justifyContent='flex-start'>
+          <MediumHeadLine mediaFontSize="2.5rem" width='90%' color='pink'>Security and Data</MediumHeadLine>
           <SplitLogo height='3rem' src={split} />
         </FlexWrapper>
-        <Text fontSize="2.5rem" margin='0 4rem' textAlign='left' width='auto'>
+        <Text mediaFontSize="2.3rem" mobilewidth='100%' fontSize="2.5rem" margin='0 4rem' textAlign='start' width='100%'>
         Create solutions for protecting data and running environments.
         </Text>
       </FlexWrapper>
-      <FlexWrapper height='15vh' width='70%' justifyContent='flex-start' flexDirectionMobile='column' marginMobile='2rem 0'>
-        <FlexWrapper width='auto'>
-          <MediumHeadLine color='pink'>Automation and Tools</MediumHeadLine>
+      <FlexWrapper flexDirection='column' height='15vh' marginMobile='2rem 0' justifyContent='flex-start'>
+        <FlexWrapper justifyContent='flex-start'>
+          <MediumHeadLine mediaFontSize="2.5rem" width='90%' color='pink'>Automation and Tools</MediumHeadLine>
           <SplitLogo height='3rem' src={split} />
         </FlexWrapper>
-        <Text fontSize="2.5rem"  margin='0 4rem' textAlign='left' width='auto'>
+        <Text mediaFontSize="2.3rem" mobilewidth='100%' fontSize="2.5rem" margin='0 4rem' textAlign='start' width='100%'>
         Enhance spot automation capabilities and build dev operation tools.
         </Text>
       </FlexWrapper>

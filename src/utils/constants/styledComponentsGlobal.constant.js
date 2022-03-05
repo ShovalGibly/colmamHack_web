@@ -18,9 +18,12 @@ export const FlexWrapper = styled.div`
 
   @media screen and (max-width: 550px) {
     flex-direction: '${({ flexDirectionMobile, flexDirection }) =>
-      flexDirectionMobile ?? flexDirection ?? 'row'}';
+    flexDirectionMobile ?? flexDirection ?? 'row'}';
+    width: ${({ width }) => width ?? '100%'};
     margin: ${({ marginMobile, margin }) => marginMobile ?? margin ?? '0'};
-  `;
+    padding: ${({paddingMobile}) => paddingMobile};
+    `;
+
 
 const Headline = styled.p`
   font-family: ${Fonts.main};
@@ -59,10 +62,10 @@ export const MediumHeadLine = styled(Headline)`
 `;
 
 export const SmallHeadLine = styled(Headline)`
-  font-size: 2rem;
+  font-size: 2.5rem;
 
   @media screen and (max-width: 550px) {
-    font-size: 1rem;
+    font-size: ${({ mediaFontSize }) => mediaFontSize ?? '2.2rem'};
     margin: 0 0 0 0.5rem;
   }
 `;
@@ -72,7 +75,7 @@ export const SizedHeadLine = styled(Headline)`
   margin: 0 0 3rem 0;
 
   @media screen and (max-width: 550px) {
-    font-size: ${({ size }) => (size ? `${size / 1.3}rem` : '1rem')};
+    font-size: ${({ size }) => (size ? `${size / 1.1}rem` : '1rem')};
     margin: 0 0 3rem 0.625rem;)};
   }
 `;
@@ -95,7 +98,7 @@ export const Text = styled.p`
   @media screen and (max-width: 550px) {
     font-size: ${({ mediaFontSize }) => mediaFontSize ?? '2rem'};
     margin: ${({ mediaMargin }) => mediaMargin ?? '0'};
-    width: 30rem;
+    width: ${({ mobilewidth }) => mobilewidth ?? '30rem'};
   }
 `;
 
@@ -122,10 +125,10 @@ export const Loader = styled.div`
 
 export const SplitLogo = styled.img`
   height: ${({ height }) => height ?? '8rem'};
+  margin-left: ${({ marginLeft }) => marginLeft ?? '0'};
 
   @media screen and (max-width: 550px) {
-    height: 4rem;
-    margin-left: 0;
+    height: ${({ heightMobile }) => heightMobile ?? '4rem'};
   }
 `;
 

@@ -16,7 +16,7 @@ function SponserSection() {
         fontSize='3rem'
         color='black'
         textAlign='center'
-        mediaFontSize= '2rem'
+        mediaFontSize= '3rem'
       >
 הפרסים והתחרות בחסות חברת Netapp
 בהשתתפות בית הספר למדעי המחשב ואגודת הסטודנטים
@@ -28,7 +28,7 @@ function SponserSection() {
         <Logo src={logoColman} />
         <Logo src={logoSpotByNetapp} />
       </FlexWrapper>
-      <Text fontSize='1.8rem' mediaMargin='2rem 0 0 0' mediaFontSize='1.3rem' color='black' textAlign='center'>
+      <Text fontSize='1.8rem' mediaMargin='2rem 0 0 0' mediaFontSize='1.7rem' color='black' textAlign='center'>
       NetApp is a proven leader when it comes to modernizing and simpliying your storage environment. From simple, smart, trusted storage for shared NAS and SAN environments to arrays built for dedicated, high-bandwidth applications like data analytics and disk-based backup, we work with you to design the perfect solution.
       </Text>
     </FlexWrapper>

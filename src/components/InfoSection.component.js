@@ -12,21 +12,21 @@ function InfoSection() {
   return (
     <FlexWrapper backgroundColor="darkPurple" height="80vh" id="info" padding='3.5rem 0 2rem 0'>
       <InfoWrapper flexDirection="column" alignItems="flex-end" width="auto">
-        <MediumHeadLine mediaFontSize='2.8rem' color="pink"> WHO?</MediumHeadLine>
-        <SizedHeadLine dir="rtl" color="black" size={2.3}>
+        <MediumHeadLine mediaFontSize='3.2rem' color="pink"> WHO?</MediumHeadLine>
+        <SizedHeadLine dir="rtl" color="black" size={2.5}>
           צוותים של סטודנטים למדעי המחשב במכללה למנהל המעוניינים ליצור פרויקטים
           ולאתגר את עצמם.
         </SizedHeadLine>
-        <MediumHeadLine mediaFontSize='2.8rem' color="pink">WHEN?</MediumHeadLine>
-        <SizedHeadLine dir="rtl" color="black" size={2.3}>
+        <MediumHeadLine mediaFontSize='3.2rem' color="pink">WHEN?</MediumHeadLine>
+        <SizedHeadLine dir="rtl" color="black" size={2.5}>
           03-04.4.2022
         </SizedHeadLine>
-        <MediumHeadLine mediaFontSize='2.8rem' color="pink">WHERE? </MediumHeadLine>
-        <SizedHeadLine dir="rtl" color="black"size={2.3}>
+        <MediumHeadLine mediaFontSize='3.2rem' color="pink">WHERE? </MediumHeadLine>
+        <SizedHeadLine dir="rtl" color="black"size={2.5}>
           במכללה בהתאם להנחיות התו הסגול (גם ללא מחוסנים).
         </SizedHeadLine>
-        <MediumHeadLine mediaFontSize='2.8rem' color="pink">WHAT?</MediumHeadLine>
-        <SizedHeadLine dir="rtl" color="black" size={2.3}>
+        <MediumHeadLine mediaFontSize='3.2rem' color="pink">WHAT?</MediumHeadLine>
+        <SizedHeadLine dir="rtl" color="black" size={2.5}>
         בניית פרויקטים בנושא של אופטימיזציית מחשוב ענן ועבודה בסקיילים גדולים.        </SizedHeadLine>
       </InfoWrapper>
       <SectionHeadLine>
@@ -61,7 +61,7 @@ const SectionHeadLine = styled.div`
   @media screen and (max-width: 550px) {
     transform: none;
     position: absolute;
-    top: 0;
+    top: -4rem;
     left: 3rem;
   }
 `;
