@@ -194,6 +194,7 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: '80vh'
 `;
 
 export const Error = styled.p`
@@ -217,6 +218,7 @@ export const TextInput = styled.input`
   width: 50rem;
   border: none;
   margin: 1rem;
+  
 
   @media screen and (max-width: 550px) {
     padding: 5px;
