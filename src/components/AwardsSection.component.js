@@ -24,7 +24,7 @@ function AwardsSection() {
         <MediumHeadLine color='blue' mediaFontSize='4rem' >7,000₪</MediumHeadLine>
         <SplitLogo height='4rem' src={split} />
         <BigHeadLine mediaFontSize='6rem' color='pink'> 1 </BigHeadLine>
-        <SplitLogo heightMobile='6rem' height='10rem' src={coins1} />
+        <SplitLogo heightMobile='6rem' height='10rem' src={coins3} />
       </AwardWrapper>
       <AwardWrapper height='auto'>
         <MediumHeadLine color='blue' mediaFontSize='4rem' >4,000₪</MediumHeadLine>
@@ -36,7 +36,7 @@ function AwardsSection() {
         <MediumHeadLine mediaFontSize='4rem' color='blue'>2,000₪</MediumHeadLine>
         <SplitLogo height='4rem' src={split} />
         <BigHeadLine mediaFontSize='6rem' color='pink'> 3 </BigHeadLine>
-      <SplitLogo heightMobile='6rem' marginLeft='1.5rem' height='10rem' src={coins3} />
+      <SplitLogo heightMobile='6rem' marginLeft='1.5rem' height='10rem' src={coins1} />
       </AwardWrapper>
     </FlexWrapper>
   );

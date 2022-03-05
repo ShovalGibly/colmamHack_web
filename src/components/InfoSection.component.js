@@ -23,7 +23,7 @@ function InfoSection() {
         </SizedHeadLine>
         <MediumHeadLine mediaFontSize='3.2rem' color="pink">WHERE? </MediumHeadLine>
         <SizedHeadLine dir="rtl" color="black"size={2.5}>
-          במכללה בהתאם להנחיות התו הסגול (גם ללא מחוסנים).
+        קמפוס המכללה
         </SizedHeadLine>
         <MediumHeadLine mediaFontSize='3.2rem' color="pink">WHAT?</MediumHeadLine>
         <SizedHeadLine dir="rtl" color="black" size={2.5}>

@@ -54,7 +54,7 @@ function RegisterButton() {
         backgroundColor='pink'
         onClick={handleOpen}
       >
-        הירשם עכשיו
+        הירשמ.י עכשיו
       </FloatingButton>
       <PopupWrapper isOpen={isOpen}>
         <ClosingButton onClick={handleClose}>
@@ -121,7 +121,7 @@ function RegisterButton() {
               name='members'
               type='text'
               dir='rtl'
-              placeholder=' אנא ציינ/י שמות סטודנטים לקבוצה מופרדים בפסיק (לא חובה )  '
+              placeholder='שמות סטודנטים לקבוצה מופרדים בפסיק (לא חובה)'
             />
             {errors.members && (
               <Error dir='rtl'>
@@ -169,7 +169,7 @@ function RegisterButton() {
               placeholder='ספר/י על עצמך בכמה מילים'
             />
             <Text mediaFontSize='1.6rem' dir='rtl' width='50rem' fontSize='1.3rem' style={{color:'black'}}>
-              על כל סטודנט.ית לבצע הרשמה ! ההרשמה פתוחה לסטודנטים בשנים א', ב', וג' ומסלול אל"צ ד' ה' בהתאמה.
+              על כל סטודנט.ית לבצע הרשמה ! ההרשמה פתוחה לסטודנטים בשנים  ב', וג' ומסלול אל"צ ד' ה' בהתאמה.
               <b> ** הרשמה אינה מבטיחה השתתפות בהאקתון. אישור השתתפות יישלח לאחר סגירת ההרשמה. </b>
             </Text>
             <Button> שלח </Button>
@@ -190,6 +190,7 @@ const FloatingButton = styled(Button)`
   height: 5rem;
   border-radius: 5px;
   z-index: 2;
+  font-size: 2rem;
 
   &:hover {
     transform: scale(1.1);
@@ -200,6 +201,7 @@ const FloatingButton = styled(Button)`
     height: 4rem;
     bottom: 20px;
     right: 5px;
+    font-size: 1.7rem;
   }
 `;
 
