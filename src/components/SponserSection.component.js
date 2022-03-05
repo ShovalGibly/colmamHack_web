@@ -22,6 +22,7 @@ function SponserSection() {
 בהשתתפות בית הספר למדעי המחשב ואגודת הסטודנטים
 
       </Text>
+     
       <FlexWrapper width='90%' height='auto' wrap>
         <Logo src={logoAguda} style={{height: '8rem'}} />
         <Logo src={logoColman} />
