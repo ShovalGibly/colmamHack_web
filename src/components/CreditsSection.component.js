@@ -75,28 +75,6 @@ function CreditsSection() {
             />
           ))}
         </ItemsWrapper>
-        {/* <CreditHeadLine text='Mentors' />
-        <ItemsWrapper height='auto' justifyContent='flex-end'>
-          {TBD.map(({ linkedInLink, facebookLink, name, image }) => (
-            <CreditItem
-              linkedInLink={linkedInLink}
-              facebookLink={facebookLink}
-              name={name}
-              image={image}
-            />
-          ))}
-        </ItemsWrapper>
-        <CreditHeadLine text='Judges' />
-        <ItemsWrapper height='auto' justifyContent='flex-end'>
-          {TBD.map(({ linkedInLink, facebookLink, name, image }) => (
-            <CreditItem
-              linkedInLink={linkedInLink}
-              facebookLink={facebookLink}
-              name={name}
-              image={image}
-            />
-          ))}
-        </ItemsWrapper> */}
       </InnerWrapper>
     </FlexWrapper>
   );
