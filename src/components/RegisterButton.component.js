@@ -184,7 +184,7 @@ const FloatingButton = styled(Button)`
   display: ${({ isOpen }) => (isOpen ? 'none' : 'block')};
   cursor: pointer;
   position: fixed;
-  bottom: 2rem;
+  bottom: 3rem;
   right: 2rem;
   width: 20rem;
   height: 5rem;
@@ -198,7 +198,7 @@ const FloatingButton = styled(Button)`
   @media screen and (max-width: 550px) {
     width: 12rem;
     height: 4rem;
-    bottom: 5px;
+    bottom: 20px;
     right: 5px;
   }
 `;
