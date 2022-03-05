@@ -190,6 +190,7 @@ const FloatingButton = styled(Button)`
   height: 5rem;
   border-radius: 5px;
   z-index: 2;
+  font-size: 2rem;
 
   &:hover {
     transform: scale(1.1);
@@ -200,6 +201,7 @@ const FloatingButton = styled(Button)`
     height: 4rem;
     bottom: 20px;
     right: 5px;
+    font-size: 1.7rem;
   }
 `;
 

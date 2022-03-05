@@ -55,14 +55,14 @@ export const BigHeadLine = styled(Headline)`
 `;
 
 export const MediumHeadLine = styled(Headline)`
-  font-size: 3.5rem;
-  @media screen and (max-width: 550px) {
+font-size: ${({ fontSize }) => fontSize ?? '3.5rem'};
+@media screen and (max-width: 550px) {
     font-size: ${({ mediaFontSize }) => mediaFontSize ?? '2rem'};
   }
 `;
 
 export const SmallHeadLine = styled(Headline)`
-  font-size: 2.5rem;
+font-size: ${({ fontSize }) => fontSize ?? '2.5rem'};
 
   @media screen and (max-width: 550px) {
     font-size: ${({ mediaFontSize }) => mediaFontSize ?? '2.2rem'};
@@ -75,7 +75,7 @@ export const SizedHeadLine = styled(Headline)`
   margin: 0 0 3rem 0;
 
   @media screen and (max-width: 550px) {
-    font-size: ${({ size }) => (size ? `${size / 1.1}rem` : '1rem')};
+    font-size: ${({ size }) => (size ? `${size}rem` : '1rem')};
     margin: 0 0 3rem 0.625rem;)};
   }
 `;
@@ -133,7 +133,7 @@ export const SplitLogo = styled.img`
 `;
 
 export const Link = styled.a`
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: black;
   text-decoration: none;
 
@@ -142,7 +142,7 @@ export const Link = styled.a`
   }
 
   @media screen and (max-width: 550px) {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 `;
 
