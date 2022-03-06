@@ -19,15 +19,16 @@ function InfoSection() {
         </SizedHeadLine>
         <MediumHeadLine mediaFontSize='3.2rem' color="pink">WHEN?</MediumHeadLine>
         <SizedHeadLine dir="rtl" color="black" size={2.5}>
-          03-04.4.2022
+          03-04.4.2022.
         </SizedHeadLine>
         <MediumHeadLine mediaFontSize='3.2rem' color="pink">WHERE? </MediumHeadLine>
         <SizedHeadLine dir="rtl" color="black"size={2.5}>
-        קמפוס המכללה
+        קמפוס המכללה.
         </SizedHeadLine>
         <MediumHeadLine mediaFontSize='3.2rem' color="pink">WHAT?</MediumHeadLine>
         <SizedHeadLine dir="rtl" color="black" size={2.5}>
-        בניית פרויקטים בנושא של אופטימיזציית מחשוב ענן ועבודה בסקיילים גדולים.        </SizedHeadLine>
+        ספוט מזמינה אותכן/ם להשתתף בהאקטון ולהתמודד עם חלק מהאתגרים הגדולים שניצבים היום בעבודה בסביבות ענן, אופטימיזציה של משאבים, סביבות ריצה גדולות וללמוד על הפתרונות המובילים של ספוט.
+   </SizedHeadLine>
       </InfoWrapper>
       <SectionHeadLine>
         <ExtraHeadLine color="blue">info</ExtraHeadLine>
@@ -59,10 +60,11 @@ const SectionHeadLine = styled.div`
   transform: rotate(270deg) translateX(-20px);
 
   @media screen and (max-width: 550px) {
-    transform: none;
-    position: absolute;
-    top: -4rem;
-    left: 3rem;
+    // transform: none;
+    // position: absolute;
+    // top: -7rem;
+    // left: 3rem;
+    display: none;
   }
 `;
 
