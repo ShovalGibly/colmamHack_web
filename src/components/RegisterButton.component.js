@@ -53,8 +53,7 @@ function RegisterButton() {
         isOpen={isOpen}
         backgroundColor='pink'
         onClick={handleOpen}
-      >
-        הירשמ.י עכשיו
+      > הירשמ.י עכשיו
       </FloatingButton>
       <PopupWrapper isOpen={isOpen}>
         <ClosingButton onClick={handleClose}>
