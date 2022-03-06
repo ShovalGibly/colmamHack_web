@@ -37,7 +37,7 @@ function CountDownTimer({date='april 03, 2022 12:00:00'}){
                             <Loader /> :
                             <BigHeadLine color='pink'>{`${numberToPrint} ${afterNumber}`}</BigHeadLine>
                         }
-                        <SmallHeadLine margin='0 0 0 2rem'>{key}</SmallHeadLine>
+                        <SmallHeadLine mediaFontSize='1.5rem' margin='0 0 0 2rem'>{key}</SmallHeadLine>
                     </NumberWrapper>
                 );
             })}

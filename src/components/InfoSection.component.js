@@ -10,24 +10,25 @@ import split from "../assets/dots.png";
 
 function InfoSection() {
   return (
-    <FlexWrapper backgroundColor="darkPurple" height="80vh" id="info">
+    <FlexWrapper backgroundColor="darkPurple" height="80vh" id="info" padding='3.5rem 0 2rem 0'>
       <InfoWrapper flexDirection="column" alignItems="flex-end" width="auto">
-        <MediumHeadLine color="pink"> WHO?</MediumHeadLine>
+        <MediumHeadLine mediaFontSize='3.2rem' color="pink"> ?מי</MediumHeadLine>
         <SizedHeadLine dir="rtl" color="black" size={2.5}>
           צוותים של סטודנטים למדעי המחשב במכללה למנהל המעוניינים ליצור פרויקטים
           ולאתגר את עצמם.
         </SizedHeadLine>
-        <MediumHeadLine color="pink">WHEN?</MediumHeadLine>
+        <MediumHeadLine mediaFontSize='3.2rem' color="pink">?מתי</MediumHeadLine>
         <SizedHeadLine dir="rtl" color="black" size={2.5}>
           03-04.4.2022
         </SizedHeadLine>
-        <MediumHeadLine color="pink">WHERE? </MediumHeadLine>
+        <MediumHeadLine  mediaFontSize='3.2rem' color="pink">?איפה </MediumHeadLine>
         <SizedHeadLine dir="rtl" color="black"size={2.5}>
-          במכללה בהתאם להנחיות התו הסגול (גם ללא מחוסנים).
+        קמפוס המכללה למנהל.
         </SizedHeadLine>
-        <MediumHeadLine color="pink">WHAT?</MediumHeadLine>
+        <MediumHeadLine mediaFontSize='3.2rem' color="pink">?מה</MediumHeadLine>
         <SizedHeadLine dir="rtl" color="black" size={2.5}>
-        בניית פרויקטים בנושא של אופטימיזציית מחשוב ענן ועבודה בסקיילים גדולים.        </SizedHeadLine>
+        ספוט מזמינה אתכן.ם להשתתף בהאקתון ולהתמודד עם חלק מהאתגרים הגדולים שניצבים היום בעבודה בסביבות ענן, אופטימיזציה של משאבים, סביבות הרצה מורכבות וללמוד על הפתרונות המובילים של ספוט.
+   </SizedHeadLine>
       </InfoWrapper>
       <SectionHeadLine>
         <ExtraHeadLine color="blue">info</ExtraHeadLine>
@@ -40,10 +41,14 @@ function InfoSection() {
 const InfoWrapper = styled(FlexWrapper)`
   position: relative;
   left: 20rem;
+  padding: 1rem 0;
 
   @media screen and (max-width: 550px) {
     left: 0;
     padding: 0 1.5rem;
+    position: absolute;
+    top:0
+
   }
 `;
 
@@ -55,10 +60,7 @@ const SectionHeadLine = styled.div`
   transform: rotate(270deg) translateX(-20px);
 
   @media screen and (max-width: 550px) {
-    position: absolute;
-    transform: none;
-    top: 2rem;
-    left: 2rem;
+    display: none;
   }
 `;
 

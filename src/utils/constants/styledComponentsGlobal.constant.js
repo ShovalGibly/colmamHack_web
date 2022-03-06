@@ -3,6 +3,7 @@ import { Colors, Fonts } from './style.constant';
 
 export const FlexWrapper = styled.div`
   margin: ${({ margin }) => margin ?? '0'};
+  padding: ${({padding}) => padding?? '0' };
   position: relative;
   display: flex;
   width: ${({ width }) => width ?? '100%'};
@@ -16,11 +17,13 @@ export const FlexWrapper = styled.div`
   
 
   @media screen and (max-width: 550px) {
-    flex-direction: ${({ flexDirectionMobile, flexDirection }) =>
-      flexDirectionMobile ?? flexDirection ?? 'row'};
+    flex-direction: '${({ flexDirectionMobile, flexDirection }) =>
+    flexDirectionMobile ?? flexDirection ?? 'row'}';
+    width: ${({ width }) => width ?? '100%'};
     margin: ${({ marginMobile, margin }) => marginMobile ?? margin ?? '0'};
-  }
-`;
+    padding: ${({paddingMobile}) => paddingMobile};
+    `;
+
 
 const Headline = styled.p`
   font-family: ${Fonts.main};
@@ -31,10 +34,11 @@ const Headline = styled.p`
 
 export const ExtraHeadLine = styled(Headline)`
 font-size: 15rem;
-margin-left: 15rem;
+margin-left: 17rem;
 
   @media screen and (max-width: 550px) {
     font-size: 4rem;
+    
   }
 `;
 
@@ -45,35 +49,34 @@ export const BigHeadLine = styled(Headline)`
   text-align: center;
   align-items: center;
 
-  // color: blue;
   @media screen and (max-width: 550px) {
-    font-size: 4rem;
+    font-size: ${({ mediaFontSize }) => mediaFontSize ?? '4rem'};
   }
 `;
 
 export const MediumHeadLine = styled(Headline)`
-  font-size: 4rem;
-  @media screen and (max-width: 550px) {
-    font-size: 4rem;
+font-size: ${({ fontSize }) => fontSize ?? '3.5rem'};
+@media screen and (max-width: 550px) {
+    font-size: ${({ mediaFontSize }) => mediaFontSize ?? '2rem'};
   }
 `;
 
 export const SmallHeadLine = styled(Headline)`
-  font-size: 2rem;
+  font-size: 2.5rem;
 
   @media screen and (max-width: 550px) {
-    font-size: 1rem;
+    font-size: ${({ mediaFontSize }) => mediaFontSize ?? '2.2rem'};
     margin: 0 0 0 0.5rem;
   }
 `;
 
 export const SizedHeadLine = styled(Headline)`
   font-size: ${({ size }) => (size ? `${size}rem` : '2rem')};
-  margin: 0 0 0.5rem;
+  margin: 0 0 3rem 0;
 
   @media screen and (max-width: 550px) {
-    font-size: ${({ size }) => (size ? `${size / 2}rem` : '1rem')};
-    margin: 1rem 0 3rem ${({ size }) => (size ? `${size / 4}rem` : '0.5rem')};
+    font-size: ${({ size }) => (size ? `${size / 1.1}rem` : '1rem')};
+    margin: 0 0 3rem 0.625rem;)};
   }
 `;
 
@@ -86,15 +89,16 @@ export const Space = styled.div`
 `;
 
 export const Text = styled.p`
-  margin: ${({ margin }) => margin ?? '0 0 1rem'};
+  margin: ${({ margin }) => margin ?? '0 0 0.5rem'};
   text-align: ${({ textAlign }) => textAlign ?? 'right'};
   font-size: ${({ fontSize }) => fontSize ?? '2.2rem'};
   color: ${({ color }) => Colors[color] ?? color ?? Colors.white};
-  width: ${({ width }) => width ?? '62rem'};
+  width: ${({ width }) => width ?? '70rem'};
 
   @media screen and (max-width: 550px) {
-    font-size: 1rem;
-    width: 30rem;
+    font-size: ${({ mediaFontSize }) => mediaFontSize ?? '2rem'};
+    margin: ${({ mediaMargin }) => mediaMargin ?? '0'};
+    width: ${({ mobilewidth }) => mobilewidth ?? '30rem'};
   }
 `;
 
@@ -121,15 +125,15 @@ export const Loader = styled.div`
 
 export const SplitLogo = styled.img`
   height: ${({ height }) => height ?? '8rem'};
+  margin-left: ${({ marginLeft }) => marginLeft ?? '0'};
 
   @media screen and (max-width: 550px) {
-    height: 4rem;
-    margin-left: 0;
+    height: ${({ heightMobile }) => heightMobile ?? '4rem'};
   }
 `;
 
 export const Link = styled.a`
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: black;
   text-decoration: none;
 
@@ -156,9 +160,9 @@ const popupAnimation = keyframes`
 export const PopupWrapper = styled(FlexWrapper)`
   display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
   position: fixed;
+  height: ${({ height }) => (height ?? '100vh')};
   top: 0;
   left: 0;
-  height: 100vh;
   z-index: 2;
   background-color: ${Colors.darkPurple + Colors.opacity90};
   animation: ${popupAnimation} 0.5s linear;
@@ -175,15 +179,14 @@ export const ClosingButton = styled.div`
   }
 
   @media screen and (max-width: 550px) {
-    top: unset;
-    bottom: 2rem;
-    right: 3rem;
+    top: 0rem;
+    right: 0.5rem;
   }
 `;
 
 export const Popup = styled(FlexWrapper)`
   width: auto;
-  height: auto;
+  height: ${({ height }) => (height ?? 'auto')};
   background-color: ${({ backgroundColor }) =>
     Colors[backgroundColor] ?? backgroundColor ?? 'transparent'};
 `;
@@ -192,6 +195,7 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 `;
 
 export const Error = styled.p`

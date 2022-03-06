@@ -53,8 +53,7 @@ function RegisterButton() {
         isOpen={isOpen}
         backgroundColor='pink'
         onClick={handleOpen}
-      >
-        הירשם עכשיו
+      > הירשמ.י
       </FloatingButton>
       <PopupWrapper isOpen={isOpen}>
         <ClosingButton onClick={handleClose}>
@@ -104,24 +103,11 @@ function RegisterButton() {
               </Error>
             )}
             <TextInput
-              ref={register({ required: true, minLength: 2, maxLength: 25 })}
-              name='groupName'
-              type='text'
-              dir='rtl'
-              placeholder=' שם קבוצה (או אין קבוצה אם אין) '
-            />
-            {errors.groupName && (
-              <Error dir='rtl'>
-                {' '}
-                אנא הכנס שם קבוצה או כתוב אין קבוצה אם אין{' '}
-              </Error>
-            )}
-            <TextInput
               ref={register({ minLength: 2, maxLength: 200 })}
               name='members'
               type='text'
               dir='rtl'
-              placeholder=' אנא ציינ/י שמות סטודנטים לקבוצה מופרדים בפסיק (לא חובה )  '
+              placeholder='שמות סטודנטים לקבוצה מופרדים בפסיק (לא חובה)'
             />
             {errors.members && (
               <Error dir='rtl'>
@@ -168,9 +154,9 @@ function RegisterButton() {
               dir='rtl'
               placeholder='ספר/י על עצמך בכמה מילים'
             />
-            <Text dir='rtl' width='50rem' fontSize='1.3rem' style={{color:'black'}}>
-              על כל סטודנט.ית לבצע הרשמה ! ההרשמה פתוחה לסטודנטים בשנים א', ב', וג' ומסלול אל"צ ד' ה' בהתאמה.
-              <b> ** הרשמה אינה מבטיחה השתתפות בהאקתון. אישור השתתפות יישלח לאחר סגירת ההרשמה. </b>
+            <Text mediaFontSize='1.6rem' dir='rtl' width='50rem' fontSize='1.3rem' style={{color:'black'}}>
+              על כל סטודנט.ית לבצע הרשמה ! ההרשמה פתוחה לסטודנטים בשנים  ב', ג' ומסלול אל"צ ד', ה' בהתאמה.
+              <b> ** הרשמה אינה מבטיחה השתתפות בהאקתון, מספר המקומות מוגבל. אישור השתתפות יישלח לאחר סגירת ההרשמה. </b>
             </Text>
             <Button> שלח </Button>
           </Form>
@@ -184,12 +170,13 @@ const FloatingButton = styled(Button)`
   display: ${({ isOpen }) => (isOpen ? 'none' : 'block')};
   cursor: pointer;
   position: fixed;
-  bottom: 2rem;
+  bottom: 3rem;
   right: 2rem;
   width: 20rem;
   height: 5rem;
   border-radius: 5px;
   z-index: 2;
+  font-size: 2rem;
 
   &:hover {
     transform: scale(1.1);
@@ -198,8 +185,9 @@ const FloatingButton = styled(Button)`
   @media screen and (max-width: 550px) {
     width: 12rem;
     height: 4rem;
-    bottom: 5px;
+    bottom: 20px;
     right: 5px;
+    font-size: 1.7rem;
   }
 `;
 

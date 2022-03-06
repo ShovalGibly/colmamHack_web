@@ -19,13 +19,13 @@ export const organizers = [
   {  
     name: 'Tom Pony',
     image: tom,
-    facebookLink: 'https://www.facebook.com/shoval.gibly.3',
+    facebookLink: 'https://www.facebook.com/tompony',
     linkedInLink: 'https://www.linkedin.com/in/tom-pony',
   },
   {  
     name: 'Saar Amsalem',
     image: saar,
-    facebookLink: 'https://www.facebook.com/shoval.gibly.3',
+    facebookLink: 'https://m.facebook.com/saar.amsalem',
     linkedInLink: 'https://www.facebook.com/saar.amsalem',
   },
 ];

@@ -27,7 +27,7 @@ function Table() {
     return(
         <FlexWrapper flexDirection='column' backgroundColor='darkPurple'>
                 <Text>{dataToDisplay.length} מספר רשומים </Text>
-                <div style={{display: 'flex', justifyContent: 'center', margin: '0 0 10rem', overflowY: 'auto'}}>
+                <div style={{display: 'flex', justifyContent: 'center', margin: '0 0 10rem'}}>
                     <StripedDataTableWrapper>
                         <TableHead>
                             <tr>
