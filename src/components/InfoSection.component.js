@@ -21,6 +21,10 @@ function InfoSection() {
         <SizedHeadLine dir="rtl" color="black" size={2.5}>
           03-04.4.2022
         </SizedHeadLine>
+        <MediumHeadLine mediaFontSize='3.2rem' color="pink">?מה לגבי יום ההכנה</MediumHeadLine>
+        <SizedHeadLine dir="rtl" color="black" size={2.5}>
+          יום ההכנה יתקיים בתאריך ה 28.3 בקמפוס המכללה (חובת נוכחות)
+        </SizedHeadLine>
         <MediumHeadLine  mediaFontSize='3.2rem' color="pink">?איפה </MediumHeadLine>
         <SizedHeadLine dir="rtl" color="black"size={2.5}>
         קמפוס המכללה למנהל.

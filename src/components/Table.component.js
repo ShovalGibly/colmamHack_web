@@ -74,7 +74,7 @@ export const StripedDataTableWrapper = styled.table`
     & tr {
         text-transform: capitalize;
         font-size: 1.2rem;
-        color: ${Colors.white};
+        color: ${Colors.black};
     }
     
     & td, & th {
